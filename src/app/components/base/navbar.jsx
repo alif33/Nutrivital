@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AllLinks from "./AllLinks";
-import logo from "../../../assets/logo.png";
 import Container from "../ui/Container";
 import { IoMenuSharp } from "react-icons/io5";
 import Sidebar from "./Sidebar";
@@ -12,12 +11,13 @@ import Sidebar from "./Sidebar";
 const Navbar = ({ children }) => {
   const [sidemenu, setSideMenu] = useState(false);
   return (
-    <Container>
+    <div className="shadow-sm pb-2">
+      <Container>
       <div className="flex flex-row justify-between w-full  items-center py-2 ">
         {/* Navbar Left */}
         <div className="">
           <Link href="/">
-            <Image src={logo} width={100} height={20} alt={"logo"} />
+            <Image src="/images/logo.svg" width={80} height={50} alt={"logo"} />
           </Link>
         </div>
         {/* Navbar Right */}
@@ -45,6 +45,8 @@ const Navbar = ({ children }) => {
         </div>
       </div>
     </Container>
+    </div>
+    
   );
 };
 export default Navbar;
