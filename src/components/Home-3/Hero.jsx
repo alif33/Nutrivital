@@ -8,18 +8,18 @@ const Hero = () => {
   return (
     <div className="mt-14">
       <Container>
-        <div className="flex lg:flex-row gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-20 items-center">
           {/* left */}
           <div className="lg:w-1/2">
-            <h1 className="text-[80px] leading-[90px] text-[#110904] font-semibold font-urbanist">
+            <h1 className="text-4xl lg:text-[80px] leading-tight text-center lg:text-left lg:leading-[90px] text-[#110904] font-semibold font-urbanist">
               Nutritionist that can make you{" "}
               <span className="text-brand-1">happy</span>
             </h1>
-            <p className="text-[#969696] text-xl font-normal mt-5 leading-8">
+            <p className="text-[#969696] text-base lg:text-left text-center lg:text-xl font-normal mt-5 leading-8">
               Always take care of your health starting from the food menu that
               you consume every day
             </p>
-            <div className="mt-16 flex flex-row gap-5 items-center">
+            <div className="mt-16 flex flex-col lg:flex-row gap-5 items-center">
               <button className="flex flex-row gap-2 rounded-full bg-brand-1 py-4 px-6 text-white text-base font-semibold">
                 Explore Menu
               </button>

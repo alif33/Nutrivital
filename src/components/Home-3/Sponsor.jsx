@@ -15,29 +15,29 @@ const Sponsor = () => {
           Trusted by <span className="text-[#282828] font-bold">250+</span>{" "}
           Company
         </p>
-        <div className="flex flex-row flex-wrap lg:flex-nowrap w-full justify-between mt-4 gap-2">
+        <div className="lg:flex lg:flex-row grid grid-cols-3 lg:flex-nowrap w-full justify-between mt-4 gap-2">
           <Image
-            className="py-6 px-6 w-[200px]"
+            className="lg:p-6 p-3 w-[200px]"
             src={sponsorImage1}
             alt="Sponsore Image 1"
           />
           <Image
-            className="py-6 px-6 w-[200px]"
+            className="lg:p-6 p-3 w-[200px]"
             src={sponsorImage2}
             alt="Sponsore Image 2"
           />
           <Image
-            className="py-6 px-6 w-[200px]"
+            className="lg:p-6 p-3 w-[200px]"
             src={sponsorImage3}
             alt="Sponsore Image 3"
           />
           <Image
-            className="py-6 px-6 w-[200px]"
+            className="lg:p-6 p-3 w-[200px]"
             src={sponsorImage4}
             alt="Sponsore Image 6"
           />
           <Image
-            className="py-6 px-6 w-[200px]"
+            className="lg:p-6 p-3 w-[200px]"
             src={sponsorImage5}
             alt="Sponsore Image 5"
           />

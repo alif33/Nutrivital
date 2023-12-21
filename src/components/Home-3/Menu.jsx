@@ -8,12 +8,12 @@ import Image from "next/image";
 
 const Menu = () => {
   return (
-    <div className="font-urbanist mt-40 bg-[#2A9D8F14] pt-20 pb-28">
+    <div className="font-urbanist mt-20 lg:mt-40 bg-[#2A9D8F14] pt-20 pb-28">
       <Container>
-        <div className="flex flex-row gap-28">
+        <div className="flex flex-col lg:flex-row gap-7 lg:gap-28">
           {/* left */}
-          <div className="lg:w-6/12">
-            <h2 className="text-[#110904] text-[52px] font-semibold">
+          <div className="lg:w-6/12 lg:text-left text-center">
+            <h2 className="text-[#110904] text-4xl lg:text-[52px] font-semibold">
               Try Our Healthy Menu
             </h2>
             <p className="text-base text-[#969696] leading-6 font-normal mt-4">

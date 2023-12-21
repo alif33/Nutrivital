@@ -8,7 +8,7 @@ const MenuList = ({ children, name, cssStyle }) => {
       <div className="text-2xl p-3 rounded-2xl bg-brand-1 text-white ">
         {children}
       </div>
-      <h6 className="text-[#110904] font-semibold text-2xl leading-normal">
+      <h6 className="text-[#110904] font-semibold text-lg lg:text-2xl leading-normal">
         {name}
       </h6>
     </div>

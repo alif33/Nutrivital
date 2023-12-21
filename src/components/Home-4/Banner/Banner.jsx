@@ -13,9 +13,9 @@ const Banner = () => {
       <Container>
         <div className="mx-auto max-w-xl">
           <p className="text-lg text-[#00000099] leading-6 font-normal font-urbanist">
-            we're committed to crafting a unique identity and voice for your
-            brand. Stand out from the crowd with a brand that is true to you and
-            your work.
+            {
+              " we're committed to crafting a unique identity and voice for your brand. Stand out from the crowd with a brand that is true to you and your work."
+            }
           </p>
           <div className="mt-14 flex flex-row gap-5 mx-auto justify-center items-center">
             <Button
