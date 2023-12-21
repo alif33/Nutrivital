@@ -1,0 +1,5 @@
+.about-container  {
+    background-image: url(../../../assets/about/about-background.png);
+    background-position: center;
+    background-size: cover;
+}
