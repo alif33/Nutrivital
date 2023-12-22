@@ -1,13 +1,13 @@
-import BlogHeader from "@/app/components/blog/BlogHeader";
-import BlogSection from "@/app/components/blog/BlogSection";
+import Header from "@/components/blog/header";
+import Section from "@/components/blog/section";
 
 const BlogPage = () => {
   return (
     <div className="my-28">
-      <BlogHeader />
+      <Header />
       <div className="flex  flex-col gap-24">
-        <BlogSection sectionTitle={"Latest blog post"} />
-        <BlogSection sectionTitle={"Features blog post"} />
+        <Section sectionTitle={"Latest blog post"} />
+        <Section sectionTitle={"Features blog post"} />
       </div>
     </div>
   );

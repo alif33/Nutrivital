@@ -1,16 +1,11 @@
-import Image from "next/image";
 import React from "react";
-import Container from "@/app/components/ui/Container";
-import BlogHeader from "@/app/components/blog/BlogHeader";
-import BlogTitle from "@/app/components/ui/BlogTitle";
-
-import PostHeader from "@/app/components/blogDetails/PostHeader";
-import PostContent from "@/app/components/blogDetails/PostContent";
-import PostListing from "@/app/components/blogDetails/PostListing";
-import PostCard from "@/app/components/blogDetails/PostCard";
-import PostFooter from "@/app/components/blogDetails/PostFooter";
-import BlogCard from "@/app/components/blog/BlogCard";
-import BlogSection from "@/app/components/blog/BlogSection";
+import Container from "@/components/ui/Container";
+import Header from "@/components/blog-details/header";
+import Content from "@/components/blog-details/content";
+import Listing from "@/components/blog-details/listing";
+import Card from "@/components/blog-details/card";
+import Footer from "@/components/blog-details/footer";
+import BlogSection from "@/components/blog/section";
 
 const BlogDetails = ({
   params,
@@ -28,11 +23,11 @@ const BlogDetails = ({
     <div className="mt-20">
       <Container>
         {/* top */}
-        <PostHeader />
+        <Header />
         {/* main content */}
         <div className="">
           {/* content -1  */}
-          <PostContent
+          <Content
             title={"Top new features"}
             content={[
               {
@@ -47,7 +42,7 @@ const BlogDetails = ({
             ]}
           />
           {/* Content - 2 */}
-          <PostContent
+          <Content
             title={"TLead Generation: The Power Of “Free Samples”"}
             content={[
               {
@@ -55,7 +50,7 @@ const BlogDetails = ({
               },
             ]}
           />
-          <PostListing
+          <Listing
             list={[
               {
                 name: "Brainwriting: Everyone writes down three ideas and passes their ideas to the person on their left (or right), who builds off those ideas before passing them on again. This way, ideas can cross-pollinate, morph and build on top of each other from different perspectives. After all, two heads are better than one.",
@@ -71,15 +66,15 @@ const BlogDetails = ({
               },
             ]}
           />
-          <PostCard />
-          <PostContent
+          <Card />
+          <Content
             content={[
               {
                 pera: "It’s easy to simply gather your group, state your problem, and ask for ideas. But is this the most efficient way to generate fresh, productive ideas? There are specialised methods for brainstorming that take idea generation seriously, and you may want to give some a try. They include:",
               },
             ]}
           />
-          <PostListing
+          <Listing
             list={[
               {
                 name: "Brainwriting: Everyone writes down three ideas and passes their ideas to the person on their left (or right), who builds off those ideas before passing them on again. This way, ideas can cross-pollinate, morph and build on top of each other from different perspectives. After all, two heads are better than one.",
@@ -95,7 +90,7 @@ const BlogDetails = ({
               },
             ]}
           />
-          <PostFooter author={"Brian Aude"} date={"may 12, 2023"} />
+          <Footer author={"Brian Aude"} date={"may 12, 2023"} />
           <div className="my-16">
             {" "}
             <BlogSection sectionTitle={"Similer Posts"} />

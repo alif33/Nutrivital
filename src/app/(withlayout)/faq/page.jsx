@@ -1,5 +1,5 @@
-import FaqAccordion from "@/app/components/faq/FaqAccordion";
-import Container from "@/app/components/ui/Container";
+import Container from "@/components/ui/Container";
+import Accordion from "@/components/faq/accordion";
 
 const FaqPage = () => {
   return (
@@ -15,7 +15,7 @@ const FaqPage = () => {
             spread across Slack, email, project management tools, and cloud
             storage.
           </p>
-          <FaqAccordion />
+          <Accordion />
         </div>
       </Container>
     </div>

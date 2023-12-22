@@ -1,12 +1,12 @@
-import ContactForm from "@/app/components/contact/ContactForm";
-import ContactInformation from "@/app/components/contact/ContactInformation";
+import Information from "@/components//contact/information";
+import Form from "@/components/contact/form";
 
 
 const ContactPage = () => {
   return (
     <div>
-      <ContactInformation />
-      <ContactForm />
+      <Information />
+      <Form />
     </div>
   );
 };

@@ -1,20 +1,19 @@
 import React from "react";
-import Navbar from "../components/base/navbar";
-import Social from "../components/home/social";
-import Footer from "../components/home/footer";
-import Reviews from "../components/home/reviews";
+import Navbar from "@/components/common/navbar";
+import Banner from "@/components/common/banner";
+import Testimonials from "@/components/common/testimonial";
+import Footer from "@/components/common/footer";
 
-const Layout = ({ children }) => {
-  return (
-    <div>
-      <Navbar />
-      {children}
-
-      <Social />
-      <Reviews />
-      <Footer />
-    </div>
-  );
+const layout = ({ children }) => {
+  return(
+    <>
+        <Navbar />
+        {children}
+        <Banner />
+        <Testimonials />
+        <Footer />
+    </>
+  )
 };
 
-export default Layout;
+export default layout;

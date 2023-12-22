@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./components/ui/Button";
+import Button from "@/components/ui/button";
 import pageNoteFoundImage from "../assets/page-not-found.png";
-import Container from "./components/ui/Container";
-import Navbar from "./components/base/navbar";
-import Social from "./components/home/social";
-import Footer from "./components/home/footer";
-import Reviews from "./components/home/reviews";
+import Container from "@/components/ui/Container";
+import Navbar from "@/components/common/navbar";
+import Footer from "@/components/common/footer";
 
 const NotFoundPage = () => {
   return (
@@ -38,11 +36,10 @@ const NotFoundPage = () => {
           </Link>
         </div>
       </Container>
-      <Social />
-      <Reviews />
       <Footer />
     </div>
   );
 };
 
 export default NotFoundPage;
+
