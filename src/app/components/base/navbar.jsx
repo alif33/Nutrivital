@@ -15,11 +15,10 @@ const Navbar = ({ children }) => {
       <Container>
       <div className="flex flex-row justify-between w-full  items-center py-2 ">
         {/* Navbar Left */}
-        <div className="">
-          <Link href="/">
-            <Image src="/images/logo.svg" width={80} height={50} alt={"logo"} />
+          <Link className="flex gap-2" href="/">
+            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+            <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
-        </div>
         {/* Navbar Right */}
         <div className="  md:flex hidden gap-5 lg:flex flex-row items-center justify-end">
           <AllLinks />

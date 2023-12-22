@@ -2,7 +2,6 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Cursor from "./components/Cursor/Cursor";
 
-
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {

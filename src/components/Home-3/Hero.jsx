@@ -19,9 +19,9 @@ const Hero = () => {
               Always take care of your health starting from the food menu that
               you consume every day
             </p>
-            <div className="mt-16 flex flex-col lg:flex-row gap-5 items-center">
-              <button className="flex flex-row gap-2 rounded-full bg-brand-1 py-4 px-6 text-white text-base font-semibold">
-                Explore Menu
+            <div className="my-16 flex flex-col lg:flex-row gap-5 items-center">
+              <button className="flex flex-row gap-2 rounded bg-brand-1 py-4 px-6 text-white text-base font-semibold">
+                See Pricing
               </button>
               <button className="flex py-4 px-6 flex-row gap-2">
                 {" "}
@@ -30,6 +30,17 @@ const Hero = () => {
                 </span>{" "}
                 Watch Video
               </button>
+            </div>
+            <div>
+              <h3 className="mb-4 text-base font-semibold">Loved By 350+ Customers</h3>
+              <div>
+                <Image
+                  height={54}
+                  width={203}
+                  src="/images/trusted-customers.svg"
+                  alt="Trusted customers"
+                />
+              </div>
             </div>
           </div>
           {/* right */}
