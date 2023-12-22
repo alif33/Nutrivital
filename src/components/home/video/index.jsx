@@ -1,8 +1,5 @@
 import React from "react";
-import Container from "@/components/ui/Container";
-// import videoImage1 from "../../assets/home-3/video-image-1.png";
-// import videoImage2 from "../../assets/home-3/video-image-2.png";
-// import videoImage3 from "../../assets/home-3/video-image-3.png";
+import Container from "@/components/ui/container";
 import Card from "./card";
 
 const Video = () => {

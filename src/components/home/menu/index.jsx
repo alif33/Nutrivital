@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "./menu.css";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import List from "./List";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 

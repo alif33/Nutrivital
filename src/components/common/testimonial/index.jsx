@@ -1,14 +1,39 @@
 "use client";
-
-import React, { useState } from "react";
-import Container from "../../ui/Container";
+import React, { useRef, useState } from "react";
+import Container from "../../ui/container";
 import Card from "./Card";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
 
-import Carousel from "../Carousel";
+// import Carousel from "../Carousel";
 
 const Testimonial = () => {
+  const [swiper, setSwiper] = useState(null);
+  const next = useRef(null);
+  const prev = useRef(null);
+
+  const breakPoints = {
+    100: {
+      slidesPerView: 1,
+    },
+    710: {
+      slidesPerView: 2,
+    },
+    1015: {
+      slidesPerView: 3,
+    },
+    1310: {
+      slidesPerView: 3,
+    },
+  };
+
+  const handleChange = swiper =>{
+    setSwiper(swiper);
+  }
+
   return (
     <div className="py-28">
       <Container>
@@ -20,44 +45,83 @@ const Testimonial = () => {
         </div>
         {/* carosule container */}
         <div className="">
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex justify-center">
+          <Swiper
+            slidesPerView={1}
+            breakpoints={breakPoints}
+            spaceBetween={20}
+            modules={[Navigation, Pagination, A11y]}
+            navigation={{
+              prevEl: prev.current,
+              nextEl: next.current,
+            }}
+            pagination={{
+              el: ".pagination-container",
+            }}
+            onInit={handleChange}
+          >
+            <SwiperSlide>
+              <Card
+                active={true}
+                review={
+                  "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                }
+                name={"Jonathon Rees!"}
+                designation={"CEO at Coffee"}
+              />
+            </SwiperSlide>
+           <SwiperSlide>
             <Card
-              active={true}
-              review={
-                "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
-              }
-              name={"Jonathon Rees!"}
-              designation={"CEO at Coffee"}
-            />
-            <Card
-              review={
-                "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
-              }
-              name={"Jonathon Rees!"}
-              designation={"CEO at Coffee"}
-            />
-            <Card
-              review={
-                "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
-              }
-              name={"Jonathon Rees!"}
-              designation={"CEO at Coffee"}
-            />
+                review={
+                  "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                }
+                name={"Jonathon Rees!"}
+                designation={"CEO at Coffee"}
+              />
+           </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={
+                  "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                }
+                name={"Jonathon Rees!"}
+                designation={"CEO at Coffee"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={
+                  "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                }
+                name={"Jonathon Rees!"}
+                designation={"CEO at Coffee"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                review={
+                  "Salient has enhanced our user experience and allowed us to move faster than ever and our company is now positioned to scale. We've seen a rediculous growth of 80% in just a few months! "
+                }
+                name={"Jonathon Rees!"}
+                designation={"CEO at Coffee"}
+              />
+            </SwiperSlide>
+            </Swiper>
           </div>
 
           <div className="my-5">
             <div className="text-grey-500 font-urbanist font-normal">
               <span className="text-3xl  text-secondary-1 font-medium leading-8">
-                3
+                {swiper ? swiper.realIndex + 1 : 1}
               </span>
-              / 15
+              / {swiper ? swiper.slides.length : 1}
             </div>
             <div className="flex flex-row justify-end items-center gap-4">
-              <button className="text-2xl text-grey-600">
-                <IoMdArrowRoundBack />
+              <button ref={prev} className="text-2xl text-grey-600 hover:text-brand-1">
+                <FaArrowLeftLong />
               </button>
-              <button className="">
-                <FaArrowRightLong className="text-2xl text-brand-1" />
+              <button ref={next} className="">
+                <FaArrowRightLong className="text-2xl text-grey-600 hover:text-brand-1" />
               </button>
             </div>
           </div>

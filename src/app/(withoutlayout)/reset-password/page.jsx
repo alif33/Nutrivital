@@ -2,8 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Container from "@/components/ui/Container";
-import logoImage from "../../../assets/logo.png";
+import Container from "@/components/ui/container";
 import resetPasswordImage from "../../../assets/reset-password.png";
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOffOutline } from "react-icons/io5";
@@ -18,8 +17,9 @@ const ResetPassword = () => {
     <div className="">
       <Container>
         <div className="py-5 mb-2">
-          <Link href="/">
-            <Image src={logoImage} alt="logo" width={100} />
+          <Link className="flex gap-2" href="/">
+            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+            <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         </div>
         <div className="">
@@ -40,7 +40,7 @@ const ResetPassword = () => {
                   </label>
                   <input
                     required
-                    className=" bg-grey-200 duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
+                    className=" bg-grey-200 duration-300 h-[50px] focus:shadow-md focus:shadow-grey-400 focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
                     type="password"
                     name="password"
                     id="password"
@@ -57,7 +57,7 @@ const ResetPassword = () => {
 
                   <input
                     required
-                    className="bg-grey-200 duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white   outline-none p-5 w-full text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
+                    className="bg-grey-200 duration-300 h-[50px] focus:shadow-md focus:shadow-grey-400 focus:bg-white   outline-none p-5 w-full text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
                     type="text"
                     name="repeatPassword"
                     id="repeatPassword"

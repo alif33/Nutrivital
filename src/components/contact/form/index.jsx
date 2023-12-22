@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Card from "@/components/contact/card";
 import fbIcon from "../../../assets/contact/Facebook.png";
 import instagramIcon from "../../../assets/contact/Instagram.png";

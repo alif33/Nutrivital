@@ -1,10 +1,7 @@
 import React from "react";
-import Container from "../ui/Container";
+import Container from "../ui/container";
 import BlogTitle from "../ui/BlogTitle";
 import BlogCard from "./BlogCard";
-import newsImage1 from "../../../assets/news/news1.png";
-import newsImage2 from "../../../assets/news/news2.png";
-import newsImage3 from "../../../assets/news/news3.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 

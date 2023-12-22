@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../ui/Container";
+import Container from "../ui/container";
 import Image from "next/image";
 import authorImage from "../../../assets/blog-details/auth.png";
 import bannerImage1 from "../../../assets/blog-details/banner.png";

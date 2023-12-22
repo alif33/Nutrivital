@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Card from "@/components/contact/card";
 import emailIcon from "../../../assets/contact/email.png";
 import phoneIcon from "../../../assets/contact/Icon.png";

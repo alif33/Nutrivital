@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import BlogTitle from "@/components/ui/blog-title";
 import Card from "./card";
 import { IoIosArrowBack } from "react-icons/io";

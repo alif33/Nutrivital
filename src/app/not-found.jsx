@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/button";
 import pageNoteFoundImage from "../assets/page-not-found.png";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 
@@ -31,7 +31,7 @@ const NotFoundPage = () => {
               bgColor={"bg-brand-1"}
               color={"text-white"}
               btnPadding={"py-3 px-8"}
-              text="Back to home "
+              text="Back to home"
             />
           </Link>
         </div>

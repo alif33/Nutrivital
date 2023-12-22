@@ -1,6 +1,6 @@
 "use server";
 import React from "react";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Card from "./card";
 import { LuApple } from "react-icons/lu";
 import { FaHandHoldingMedical } from "react-icons/fa6";

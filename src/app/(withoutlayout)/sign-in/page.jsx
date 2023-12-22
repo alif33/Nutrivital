@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import loginImage from "../../../assets/login.png";
-import logoImage from "../../../assets/logo.png";
 import { FcGoogle } from "react-icons/fc";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEye } from "react-icons/io5";
@@ -19,8 +18,9 @@ const SignIn = () => {
     <div className="">
       <Container>
         <div className="py-5 mb-2">
-          <Link href="/">
-            <Image src={logoImage} alt="logo" width={100} />
+          <Link className="flex gap-2" href="/">
+            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+            <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         </div>
         <div className="">

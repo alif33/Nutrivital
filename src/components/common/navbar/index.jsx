@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
-import Container from "../../ui/Container";
+import Container from "../../ui/container";
 import { IoMenuSharp } from "react-icons/io5";
 import SmallMenu from "./SM";
 

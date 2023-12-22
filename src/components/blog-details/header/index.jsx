@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import authorImage from "../../../assets/blog-details/auth.png";
 import bannerImage1 from "../../../assets/blog-details/banner.png";
 

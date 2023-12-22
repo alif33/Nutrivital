@@ -41,7 +41,6 @@ const Sidebar = ({ setSideMenu }) => {
         >
           FAQ
         </Link>
-        <h1>Mobile</h1>
         <div className="mx-auto fixed bottom-5 right-[25%] flex flex-row gap-5">
           <Link
             className="py-2 px-3 ring-[1px] ring-gray-400 rounded-md"

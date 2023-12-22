@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Button from "@/components/ui/button";
 import iconImage from "../../../assets/package-icon.png";
 

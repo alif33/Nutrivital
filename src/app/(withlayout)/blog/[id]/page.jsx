@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import Header from "@/components/blog-details/header";
 import Content from "@/components/blog-details/content";
 import Listing from "@/components/blog-details/listing";

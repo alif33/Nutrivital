@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from '../../ui/Container'
+import Container from '../../ui/container'
 import Image from 'next/image'
 import { FaArrowRight } from "react-icons/fa6";
 import Button from '../../ui/button'
