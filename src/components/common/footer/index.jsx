@@ -20,8 +20,7 @@ const Footer = () => {
             </p>
             <div className="w-full">
               <button
-                className="flex w-full items-center
-              justify-center  flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
+                className="flex w-[300px] md:w-full items-center justify-center flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
               >
                 <IoCallOutline />
                 <span className="text"> (973) 068 2300</span>
