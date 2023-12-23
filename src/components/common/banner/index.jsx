@@ -10,7 +10,7 @@ const Banner = () => {
        <div className="bg-[#2A9D8F] rounded-lg">
         <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap">
           <div className="basis-full md:basis-1/2 flex flex-col justify-center items-center p-3 md:p-5 lg:p-20">
-            <h2 className="font-poppins text-center lg:text-left font-semibold lg:text-h2 text-[32px] leading-9 text-white lg:leading-[60px] mb-7 sm:mt-7">
+            <h2 className="font-poppins text-center lg:text-left font-semibold text-[24px] md:text-[32px] lg:text-h2 leading-9 text-white lg:leading-[60px] mb-7 pt-7 md:pt-0">
               Helping you overcome your any kind of Nutrition challenges
             </h2>
             <div className="flex flex-row items-center">
