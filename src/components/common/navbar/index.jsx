@@ -19,10 +19,10 @@ const Navbar = ({ children }) => {
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         {/* Navbar Right */}
-        <div className="  md:flex hidden gap-5 lg:flex flex-row items-center justify-end">
+        <div className="md:flex hidden md:gap-3 lg:gap-5 lg:flex flex-row items-center justify-end">
           <Links />
         </div>
-        <div className="lg:hidden  flex flex-row">
+        <div className="lg:hidden md:hidden flex flex-row">
           <button
             onClick={() => setSideMenu(true)}
             className="bg-brand-1 p-2 text-white rounded-sm"
