@@ -83,7 +83,7 @@ const ResetPassword = () => {
               <Image
                 width={497}
                 height={364}
-                // className="lg:w-[70%]"
+                className="hidden md:block"
                 src="/images/reset-password.svg"
                 alt="Reset Password"
               />

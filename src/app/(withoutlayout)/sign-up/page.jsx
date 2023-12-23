@@ -114,7 +114,7 @@ const SignUp = () => {
               <Image 
                 width={600}
                 height={450}
-                className="w-[500px] h-[370px] lg:w-[600px] lg:h-[450px]"
+                className="hidden md:block"
                 src="/images/register.svg" 
                 alt="Register Image" 
               />

@@ -97,6 +97,7 @@ const SignIn = () => {
           <Image 
             width={425}
             height={400}
+            className="hidden md:block"
             src="/images/login.svg" 
             alt="Login Image" 
           />
