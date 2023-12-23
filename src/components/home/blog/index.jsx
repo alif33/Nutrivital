@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/components/ui/container';
-import BlogCard from '@/components/blog/BlogCard';
+import BlogCard from '@/components/blog/section/card';
 
 const Blog = () =>{
     return(

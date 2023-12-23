@@ -7,8 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 
-// import Carousel from "../Carousel";
-
 const Testimonial = () => {
   const [swiper, setSwiper] = useState(null);
   const next = useRef(null);
