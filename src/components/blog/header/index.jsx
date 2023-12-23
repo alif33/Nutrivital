@@ -25,7 +25,7 @@ const Header = () => {
                 className="border placeholder:text-[12px] placeholder:lg:text-lg w-full border-grey-300 outline-brand-1  lg:p-6  py-2 px-3 rounded-2xl"
                 placeholder="Type keyword here"
               />
-              <button className="bg-brand-1 absolute right-[6px] lg:right-2 top-[6px] lg:top-2 items-center px-3 py-[10px] lg:py-4 lg:px-6 rounded-2xl flex flex-row gap-2 text-white text-[12px] lg:text-base">
+              <button className="bg-brand-1 absolute right-[3px] lg:right-2 top-[4px] lg:top-2 items-center px-3 py-[8px] lg:py-4 lg:px-6 rounded-2xl flex flex-row gap-2 text-white text-[12px] lg:text-base">
                 <IoSearch className="text-[12px] lg:text-lg" />
                 Search
               </button>
