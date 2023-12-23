@@ -30,7 +30,7 @@ const Hero = () => {
                 Watch Video
               </button>
             </div>
-            <div>
+            <div className="flex flex-col items-center lg:items-start">
               <h3 className="mb-4 text-base font-semibold">Loved By 350+ Customers</h3>
               <div>
                 <Image

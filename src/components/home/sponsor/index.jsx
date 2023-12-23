@@ -11,7 +11,7 @@ const Sponsor = () => {
           Trusted by <span className="text-[#282828] font-bold">250+</span>{" "}
           Company
         </p>
-        <div className="lg:flex lg:flex-row grid grid-cols-3 lg:flex-nowrap w-full justify-between mt-4 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 justify-center mt-4 gap-2">
           {companies.map((company, index)=><Image
             key={index}
             width={200}

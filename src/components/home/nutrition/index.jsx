@@ -13,7 +13,7 @@ const Nutrition = () => {
         <div className="">
           {/* top */}
           <div className="">
-            <div className="flex flex-col  lg:flex-row gap-5 lg:gap-40 items-center">
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-40 items-center">
               <h1 className="text-[#141414] w-full lg:w-6/12 text-[32px] lg:text-5xl text-center lg:text-left font-semibold leading-[54px] ">
                 An innovative approach to your{" "}
                 <span className="text-[#2A9D8F]">nutrition</span>
@@ -25,7 +25,7 @@ const Nutrition = () => {
             </div>
           </div>
           {/* bottom */}
-          <div className="mt-14 lg:flex-row flex-col flex gap-5 justify-between">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-between mt-14">
             <Card
               title={"Learn to eat healthy food"}
               details={
