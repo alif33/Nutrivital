@@ -1,8 +1,8 @@
-import React from 'react'
-import Container from '../../ui/container'
-import Image from 'next/image'
+import React from "react"
+import Container from "@/components/ui/container";
+import Image from "next/image";
 import { FaArrowRight } from "@/icons";
-import Button from '../../ui/button'
+import Button from "@/components/ui/button";
 
 const Banner = () => {
   return (

@@ -5,14 +5,14 @@ import BlogCard from '@/components/blog/section/card';
 const Blog = () =>{
     return(
         <Container>
-            <div className="flex justify-between pt-20">
-                <h1 className="basis-1/2 text-[#141414] text-4xl font-bold">Read Our Best Articles for <span className="text-[#2A9D8F]">Holistic Health</span></h1>
-                <span className="px-32">
-                    <p className="text-base font-normal pb-4">{"We'll share insights, techniques, and practices that can help you manage stress, increase happiness"}</p>
+            <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-between pt-20">
+                <h1 className="basis-full md:basis-1/2 text-[#141414] text-4xl font-bold">Read Our Best Articles for <span className="text-[#2A9D8F]">Holistic Health</span></h1>
+                <span className="basis-full md:basis-1/2 lg:px-32">
+                    <p className="text-base font-normal pb-4 pt-7 md:pt-0">{"We'll share insights, techniques, and practices that can help you manage stress, increase happiness"}</p>
                     <button className="flex flex-row gap-2 rounded bg-brand-1 py-4 px-10 text-white text-base font-semibold">See More</button>
                 </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center mt-14 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 gap-5">
                 <BlogCard
                     image="/images/blogs/01.png"
                     author={"BLOG, Saas"}
