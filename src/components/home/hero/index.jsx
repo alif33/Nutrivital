@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import { FaPlayCircle } from "react-icons/fa";
+import { FaPlayCircle } from "@/icons";  
 
 const Hero = () => {
   return (

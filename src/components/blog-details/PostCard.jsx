@@ -1,7 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import contentImage1 from "../../../assets/blog-details/content-image1.png";
 import contentImage2 from "../../../assets/blog-details/content-image2.png";
-import Image from "next/image";
 
 const PostCard = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../ui/container'
 import Image from 'next/image'
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "@/icons";
 import Button from '../../ui/button'
 
 const Banner = () => {

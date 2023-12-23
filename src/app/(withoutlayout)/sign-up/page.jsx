@@ -4,9 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/container";
 import signUpImage from "../../../assets/register.png";
-import { FcGoogle } from "react-icons/fc";
-import { IoEyeOffOutline } from "react-icons/io5";
-import { IoEye } from "react-icons/io5";
+import {FcGoogle, IoEyeOffOutline, IoEye} from "@/icons";
 
 const SignUp = () => {
   const [showPassword, setShowPassowrd] = useState(false);

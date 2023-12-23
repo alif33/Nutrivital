@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
-import Container from "../../ui/container";
-import { IoMenuSharp } from "react-icons/io5";
+import Container from "@/components/ui/container";
+import { IoMenuSharp } from "@/icons";
 import SmallMenu from "./SM";
 
 const Navbar = ({ children }) => {

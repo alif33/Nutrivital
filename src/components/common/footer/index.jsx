@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import { IoCallOutline } from "react-icons/io5";
+import { IoCallOutline } from "@/icons";
 
 const Footer = () => {
   return (
@@ -49,25 +49,51 @@ const Footer = () => {
             <div className="basis-full md:basis-5/12 lg:basis-2/12">
               <ul className="flex flex-col gap-3">
                 <li>
-                  <h5 className="text-sm font-bold pb-1">Phone :</h5>
-                  <h2 className="text-xs">+1-123-456-7890</h2>
+                  <h5 className="text-lg font-bold pb-1">Phone :</h5>
+                  <h2 className="text-base">+1-123-456-7890</h2>
                 </li>
                 <li>
-                  <h5 className="text-sm font-bold pb-1">Address :</h5>
-                  <h2 className="text-xs">+1-123-456-7890</h2>
+                  <h5 className="text-lg font-bold pb-1">Address :</h5>
+                  <h2 className="text-base">+1-123-456-7890</h2>
                 </li>
                 <li>
-                  <h5 className="text-sm font-bold pb-1">Email :</h5>
-                  <h2 className="text-xs">+1-123-456-7890</h2>
+                  <h5 className="text-lg font-bold pb-1">Email :</h5>
+                  <h2 className="text-base">+1-123-456-7890</h2>
                 </li>
               </ul>
             </div>
         </div>
         {/* footer bottom */}
-        <div className="pt-8 border-t border-grey-500 mt-12">
+        <div className="flex justify-center gap-3 pt-8 border-t border-grey-500 mt-12">
           <p className="text-center text-sm lg:text-lg font-normal ">
             © 2023 Copyright By StackBuzz Inc. All Rights Reserved.
           </p>
+          <ul className="flex">
+            <li>
+              <Image
+                height={13}
+                width={13}
+                src="/images/icons/linkedin.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <Image
+                height={13}
+                width={13}
+                src="/images/icons/facebook.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <Image
+                height={13}
+                width={13}
+                src="/images/icons/twitter.svg"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
       </Container>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
-import { FaLink, FaTwitter, FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { FaLink, FaTwitter, FaFacebookF, FaInstagram } from "@/icons";
 
 const PostFooter = ({ date, author }) => {
   return (

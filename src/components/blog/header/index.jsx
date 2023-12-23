@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@/components/ui/container";
-import { IoSearch } from "react-icons/io5";
+import { IoSearch } from "@/icons";
 
 const Header = () => {
   return (

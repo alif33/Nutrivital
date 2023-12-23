@@ -1,5 +1,5 @@
 import React from "react";
-import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { BiSolidQuoteAltLeft } from "@/icons";
 
 const Card = ({ review, name, designation, active }) => {
   return (

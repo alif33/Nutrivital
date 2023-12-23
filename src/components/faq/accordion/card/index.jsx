@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "@/icons";
 
 const Card = ({ title, description }) => {
   const [accordian, setAccordian] = useState(false);

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { TfiClose } from "react-icons/tfi";
 import Button from "../../ui/button";
+import { TfiClose } from "@/icons";
 
 const Sidebar = ({ setSideMenu }) => {
   return (

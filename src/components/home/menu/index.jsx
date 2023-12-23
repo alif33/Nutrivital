@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./menu.css";
 import Container from "@/components/ui/container";
 import List from "./List";
-import { FaLocationCrosshairs } from "react-icons/fa6";
+import { FaLocationCrosshairs } from "@/icons";
 
 const Menu = () => {
   return (

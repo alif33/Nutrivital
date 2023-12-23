@@ -2,8 +2,7 @@
 import React, { useRef, useState } from "react";
 import Container from "../../ui/container";
 import Card from "./Card";
-import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong, FaArrowRightLong } from "@/icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";

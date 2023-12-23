@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "@/icons";
 import playIcon from "@/assets/home-3/play-icon.png";
 
 const VideoCard = ({ image, title, half }) => {

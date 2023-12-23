@@ -2,8 +2,7 @@ import React from "react";
 import Container from "@/components/ui/container";
 import BlogTitle from "@/components/ui/blog-title";
 import Card from "./card";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward } from "@/icons"; 
 
 const BlogSection = ({ sectionTitle }) => {
   return (
