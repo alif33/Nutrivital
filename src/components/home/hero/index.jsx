@@ -18,7 +18,7 @@ const Hero = () => {
               Always take care of your health starting from the food menu that
               you consume every day
             </p>
-            <div className="my-16 flex flex-col lg:flex-row gap-5 items-center">
+            <div className="my-16 flex gap-5 items-center justify-center lg:justify-start">
               <button className="flex flex-row gap-2 rounded bg-brand-1 py-4 px-10 text-white text-base font-semibold">
                 See Pricing
               </button>
