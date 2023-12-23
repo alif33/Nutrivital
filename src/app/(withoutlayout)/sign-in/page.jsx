@@ -19,7 +19,7 @@ const SignIn = () => {
           <span className="text-2xl font-bold">Nutrivital</span>
         </Link>
       </div>
-      <div className="flex justify-center flex-col-reverse lg:flex-row gap-10">
+      <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
         {/* login left */}
         <div className="basis-1/2 lg:pt-8">
           <h2 className="text-[#233B58] lg:mb-0 mb-5 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
@@ -93,7 +93,7 @@ const SignIn = () => {
           </p>
         </div>
         {/* login right */}
-        <div className="basis-1/2 flex justify-end">
+        <div className="basis-full md:basis-1/2 flex justify-end">
           <Image 
             width={425}
             height={400}

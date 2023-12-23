@@ -18,7 +18,7 @@ const ResetPassword = () => {
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         </div>
-          <div className="flex justify-between flex-col-reverse lg:flex-row gap-10">
+          <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
             {/* login left */}
             <div className="basis-1/2 lg:w-4/12 lg:pt-4 h-full ">
               <h2 className="text-[#233B58] leading-tight text-3xl lg:text-[40px] lg:text-left text-center font-semibold">
@@ -79,7 +79,7 @@ const ResetPassword = () => {
               </p>
             </div>
             {/* login right */}
-            <div className="basis-1/2 flex justify-end">
+            <div className="basis-full md:basis-1/2 flex justify-end">
               <Image
                 width={497}
                 height={364}
