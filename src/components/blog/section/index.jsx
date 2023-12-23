@@ -32,10 +32,9 @@ const BlogSection = ({ sectionTitle }) => {
     setSwiper(swiper);
   }
 
-
   return (
     <Container>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between mt-7">
         <BlogTitle sectionTitle={sectionTitle} />
         <div className="flex flex-row gap-3">
           <button ref={prev} className="text-lg  flex items-center justify-center bg-grey-200 px-1 lg:px-3 py-0 lg:py-3 rounded-full">
@@ -50,15 +49,15 @@ const BlogSection = ({ sectionTitle }) => {
         <Swiper
           slidesPerView={1}
           breakpoints={breakPoints}
-          spaceBetween={20}
+          spaceBetween={5}
           modules={[Navigation, Pagination, A11y]}
           navigation={{
             prevEl: prev.current,
             nextEl: next.current,
           }}
-          pagination={{
-            el: ".pagination-container",
-          }}
+          // pagination={{
+          //   el: ".pagination-container",
+          // }}
           onInit={handleChange}
         >
         <SwiperSlide> 

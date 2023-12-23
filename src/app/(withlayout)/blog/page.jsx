@@ -5,10 +5,8 @@ const BlogPage = () => {
   return (
     <div className="my-28">
       <Header />
-      <div className="flex  flex-col gap-24">
-        <Section sectionTitle={"Latest blog post"} />
-        <Section sectionTitle={"Features blog post"} />
-      </div>
+      <Section sectionTitle={"Latest blog post"} />
+      <Section sectionTitle={"Features blog post"} />
     </div>
   );
 };
