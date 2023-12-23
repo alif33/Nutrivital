@@ -19,7 +19,7 @@ const Menu = () => {
               We always to provide the best value for you and your health, join
               us to maximize the benefits
             </p>
-            <div className=" flex flex-col gap-5 mt-14">
+            <div className="flex flex-col gap-5 mt-14">
               <List cssStyle={"activeList"} name={"Breakfast Recipes"}>
                 <FaLocationCrosshairs />
               </List>

@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <div className="bg-brand-2 text-white pt-20 pb-12">
       <Container>
-        <div className="grid grid-cols-4 justify-between lg:gap-10 gap-5">
+        <div className="grid grid-cols-12 justify-center lg:gap-10 gap-14">
           {/* brand footer */}
-          <div className="col-span-1">
+          <div className="col-span-6 md:col-span-6 lg:col-span-5 order-1">
             <Link className="flex gap-2" href="/">
               <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
               <span className="text-2xl font-bold">Nutrivital</span>
@@ -28,41 +28,41 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          {/* company footer */}
-          <div className="col-span-1">
-            <h3 className="text-xl mb-3 font-semibold  font-urbanist">Company</h3>
-            <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
-              <Link href="/blog">Blog</Link>
-              <Link href="/price">Pricing</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/faq">FAQ</Link>
+           {/* company footer */}
+           <div className="col-span-6 md:col-span-6 lg:col-span-2 order-2 md:order-3 lg:order-2">
+              <h3 className="text-xl mb-3 font-semibold  font-urbanist">Company</h3>
+              <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
+                <Link href="/blog">Blog</Link>
+                <Link href="/price">Pricing</Link>
+                <Link href="/contact">Contact</Link>
+                <Link href="/faq">FAQ</Link>
+              </div>
             </div>
-          </div>
-          {/* quick-links footer */}
-          <div className="cols-span-1">
-            <h3 className="text-xl mb-3 font-semibold  font-urbanist">Quick Links</h3>
-            <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
-              <Link href="/blog">Privacy Policy</Link>
-              <Link href="/price">Terms & Conditions</Link>
+            {/* quick-links footer */}
+            <div className="col-span-6 md:col-span-6 lg:col-span-2 order-3 md:order-4 lg:order-3">
+              <h3 className="text-xl mb-3 font-semibold  font-urbanist">Quick Links</h3>
+              <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
+                <Link href="/blog">Privacy Policy</Link>
+                <Link href="/price">Terms & Conditions</Link>
+              </div>
             </div>
-          </div>
-          {/* contact footer */}
-          <div className="cols-span-1">
-            <ul className="flex flex-col gap-3">
-              <li>
-                <h5 className="text-sm font-bold pb-1">Phone :</h5>
-                <h2 className="text-xs">+1-123-456-7890</h2>
-              </li>
-              <li>
-                <h5 className="text-sm font-bold pb-1">Address :</h5>
-                <h2 className="text-xs">+1-123-456-7890</h2>
-              </li>
-              <li>
-                <h5 className="text-sm font-bold pb-1">Email :</h5>
-                <h2 className="text-xs">+1-123-456-7890</h2>
-              </li>
-            </ul>
-          </div>
+            {/* contact footer */}
+            <div className="col-span-6 md:col-span-6 lg:col-span-3 order-4 md:order-2 lg:order-4">
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <h5 className="text-sm font-bold pb-1">Phone :</h5>
+                  <h2 className="text-xs">+1-123-456-7890</h2>
+                </li>
+                <li>
+                  <h5 className="text-sm font-bold pb-1">Address :</h5>
+                  <h2 className="text-xs">+1-123-456-7890</h2>
+                </li>
+                <li>
+                  <h5 className="text-sm font-bold pb-1">Email :</h5>
+                  <h2 className="text-xs">+1-123-456-7890</h2>
+                </li>
+              </ul>
+            </div>
         </div>
         {/* footer bottom */}
         <div className="pt-8 border-t border-grey-500 mt-12">
