@@ -19,7 +19,7 @@ const Hero = () => {
               you consume every day
             </p>
             <div className="my-16 flex flex-col lg:flex-row gap-5 items-center">
-              <button className="flex flex-row gap-2 rounded bg-brand-1 py-4 px-6 text-white text-base font-semibold">
+              <button className="flex flex-row gap-2 rounded bg-brand-1 py-4 px-10 text-white text-base font-semibold">
                 See Pricing
               </button>
               <button className="flex py-4 px-6 flex-row gap-2">

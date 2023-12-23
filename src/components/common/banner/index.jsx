@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { FaArrowRight } from "react-icons/fa6";
 import Button from '../../ui/button'
 
-const Social = () => {
+const Banner = () => {
   return (
       <Container>
        <div className="bg-[#2A9D8F] rounded-lg">
-        <div className="flex">
-          <div className="flex flex-col flex-1 p-20">
+        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row">
+          <div className="w-1/2 flex flex-col p-20">
             <h2
               className="font-poppins text-center lg:text-left
              font-semibold lg:text-h2 text-[32px] leading-9 text-white lg:leading-[60px] mb-12"
@@ -28,17 +28,23 @@ const Social = () => {
             </div>
           </div>
          
-          {/* Social Right */}
-          <div className="flex-1 flex items-center">
-            <div className="shadow rounded-2xl">
+          <div className="w-1/2 relative flex flex-col items-center justify-center">
+              <div className="absolute -top-14 -right-14">
+                <Image
+                  width={222}
+                  height={222}
+                  className="block"
+                  src="/images/v-shape.svg"
+                  alt="Advertise banner"
+                />
+              </div>
               <Image
-                width={525}
-                height={376}
+                width={500}
+                height={350}
                 className="block"
                 src="/images/banners/help.png"
                 alt="Advertise banner"
               />
-            </div>
           </div>
           
         </div>
@@ -47,4 +53,4 @@ const Social = () => {
   );
 }
 
-export default Social
+export default Banner

@@ -6,6 +6,7 @@ import Nutrition from "@/components/home/nutrition";
 import Menu from "@/components/home/menu";
 import Video from "@/components/home/video";
 import Banner from "@/components/common/banner";
+import Blog from "@/components/home/blog";
 import Testimonials from "@/components/common/testimonial";
 import Footer from "@/components/common/footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Menu />
       <Video />
       <Banner />
+      <Blog />
       <Testimonials />
       <Footer />
     </>
