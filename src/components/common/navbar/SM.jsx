@@ -23,7 +23,7 @@ const Sidebar = ({ setSideMenu }) => {
 
         <Link
           className="text-lg px-5 py-3 font-semibold hover:bg-grey-200 duration-300 hover:text-brand-1"
-          href={"/price"}
+          href={"/pricing"}
         >
           Pricing
         </Link>

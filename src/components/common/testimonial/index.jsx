@@ -32,7 +32,7 @@ const Testimonial = () => {
   }
 
   return (
-    <div className="py-28">
+    <div className="py-14">
       <Container>
         <div className="mb-16">
           <h3 className="text-brand-2 text-center leading-tight font-semibold font-poppins lg:text-h3 text-[32px]">
@@ -107,12 +107,6 @@ const Testimonial = () => {
           </div>
 
           <div className="my-5">
-            <div className="text-grey-500 font-urbanist font-normal">
-              <span className="text-3xl  text-secondary-1 font-medium leading-8">
-                {swiper ? swiper.realIndex + 1 : 1}
-              </span>
-              / {swiper ? swiper.slides.length : 1}
-            </div>
             <div className="flex flex-row justify-end items-center gap-4">
               <button ref={prev} className="text-2xl text-grey-600 hover:text-brand-1">
                 <FaArrowLeftLong />
