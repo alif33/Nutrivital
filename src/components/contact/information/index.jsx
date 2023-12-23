@@ -1,8 +1,7 @@
 import React from "react";
 import Container from "@/components/ui/container";
 import Card from "@/components/contact/card";
-import emailIcon from "../../../assets/contact/email.png";
-import phoneIcon from "../../../assets/contact/Icon.png";
+import { MdEmail, MdLocalPhone } from "@/icons";
 
 const Information = () => {
   return (
@@ -21,14 +20,14 @@ const Information = () => {
             <Card
               cardPadding={"p-4"}
               cardBg={"bg-grey-100"}
-              image={emailIcon}
+              icon={<MdEmail size={30} className="text-white"/>}
               title={"Email us"}
               subtitle={"Support@zamba"}
             />
             <Card
               cardPadding={"p-4"}
               cardBg={"bg-grey-100"}
-              image={phoneIcon}
+              icon={<MdLocalPhone size={30} className="text-white"/>}
               title={"Email us"}
               subtitle={"Support@zamba"}
             />

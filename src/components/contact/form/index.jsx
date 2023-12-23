@@ -2,9 +2,7 @@
 import React from "react";
 import Container from "@/components/ui/container";
 import Card from "@/components/contact/card";
-import fbIcon from "../../../assets/contact/Facebook.png";
-import instagramIcon from "../../../assets/contact/Instagram.png";
-import twitterIcon from "../../../assets/contact/Twitter.png";
+import { FaFacebookF, FaInstagram, FaTwitter } from "@/icons";
 
 const Form = () => {
   const handleSubmit = (e) => {
@@ -30,19 +28,19 @@ const Form = () => {
                 cardPadding={"py-4"}
                 title={"Facebook"}
                 subtitle={"iravit_Official"}
-                image={fbIcon}
+                icon={<FaFacebookF size={30} className="text-white"/>}
               />
               <Card
                 cardPadding={"py-4"}
                 title={"Twitter"}
                 subtitle={"iravit_Official"}
-                image={twitterIcon}
+                icon={<FaTwitter size={30} className="text-white"/>}
               />
               <Card
                 cardPadding={"py-4"}
                 title={"Instagram"}
                 subtitle={"iravit_Official"}
-                image={instagramIcon}
+                icon={<FaInstagram size={30} className="text-white"/>}
               />
             </div>
           </div>

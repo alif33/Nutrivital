@@ -32,6 +32,7 @@ import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { LuApple } from "react-icons/lu";
 import { RiMentalHealthFill } from "react-icons/ri";
 import { SlMagnifier } from "react-icons/sl";
+import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 export {
     FcGoogle, 
@@ -59,5 +60,7 @@ export {
     BiSolidQuoteAltLeft,
     LuApple,
     RiMentalHealthFill,
-    SlMagnifier 
+    SlMagnifier,
+    MdEmail,
+    MdLocalPhone 
 };

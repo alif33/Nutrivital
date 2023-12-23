@@ -1,18 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import authorImage from "../../../assets/blog-details/auth.png";
-import bannerImage1 from "../../../assets/blog-details/banner.png";
 
 const Header = () => {
   return (
     <div>
       <Container>
         <Image
-          src={bannerImage1}
-          height={500}
+          height={507}
+          width={1136}
+          src={"/images/blogs/banner.png"}
           alt="Banner Image"
-          width="100%"
         />
         <div className="my-8">
           <h2 className="text-h2 pt-6 font-poppins text-grey-900 font-semibold leading-tight">
@@ -25,7 +23,9 @@ const Header = () => {
           </p>
           <div className="flex py-5  border-b border-b-grey-300 flex-row gap-3">
             <Image
-              src={authorImage}
+              width={80}
+              height={80}
+              src={"/images/blogs/auth.png"}
               className="w-20 h-20 rounded-full"
               alt="Author Image"
             />

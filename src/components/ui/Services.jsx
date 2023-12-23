@@ -2,7 +2,6 @@ import React from "react";
 import Container from "./container";
 import Button from "./button";
 import Image from "next/image";
-import iconImage from "../../../assets/package-icon.png";
 
 const Services = ({ list, title, subtitle, titleColor }) => {
   return (
@@ -22,7 +21,12 @@ const Services = ({ list, title, subtitle, titleColor }) => {
                   key={index}
                   className="flex  mb-5 flex-row gap-2 items-center"
                 >
-                  <Image src={iconImage} alt="Package Card" />
+                  <Image 
+                    width={20}
+                    height={20}
+                    src={"/images/icons/package-icon.svg"} 
+                    alt="Package Card" 
+                  />
                   <p
                     className="lg:textxm
                   text-base font-semibold  leading-7 font-urbanist"

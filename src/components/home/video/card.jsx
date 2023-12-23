@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { FaArrowRight } from "@/icons";
-import playIcon from "@/assets/home-3/play-icon.png";
 
 const VideoCard = ({ image, title, half }) => {
   return (
@@ -14,7 +13,9 @@ const VideoCard = ({ image, title, half }) => {
             alt="Video Image" 
         />
         <Image
-          src={playIcon}
+          width={55}
+          height={51}
+          src={"/images/icons/play-icon.png"}
           alt="Play Icon"
           className="absolute top-[50%] left-[50%] cursor-pointer -translate-y-[50%] -translate-x-[50%]"
         />

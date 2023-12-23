@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import Button from "@/components/ui/button";
-import iconImage from "../../../assets/package-icon.png";
 
 const Services = ({ list, title, subtitle, titleColor }) => {
   return (
@@ -25,7 +24,7 @@ const Services = ({ list, title, subtitle, titleColor }) => {
                     <Image 
                         width={20}
                         height={20}
-                        src="/images/icons/package-icon.png" 
+                        src="/images/icons/package-icon.svg" 
                         alt="Package Card" 
                     />
                   <p

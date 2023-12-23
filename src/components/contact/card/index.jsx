@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-const Card = ({ image, title, subtitle, cardPadding, cardBg }) => {
+const Card = ({ icon, title, subtitle, cardPadding, cardBg }) => {
   return (
     <div className="w-full">
       <div
         className={`flex gap-5 flex-row ${cardPadding} ${cardBg} rounded-full`}
       >
-        <Image src={image} alt="Contact Email" />
+        <span className="h-[60px] w-[60px] flex justify-center items-center rounded-full bg-brand-1">{icon}</span>
         <div className="">
           <h4 className="text-2xl font-bold font-urbanist text-grey-900">
             {title}
