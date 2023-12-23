@@ -8,12 +8,9 @@ const Banner = () => {
   return (
       <Container>
        <div className="bg-[#2A9D8F] rounded-lg">
-        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row">
-          <div className="w-1/2 flex flex-col p-20">
-            <h2
-              className="font-poppins text-center lg:text-left
-             font-semibold lg:text-h2 text-[32px] leading-9 text-white lg:leading-[60px] mb-12"
-            >
+        <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap">
+          <div className="basis-full md:basis-1/2 flex flex-col justify-center items-center p-3 md:p-5 lg:p-20">
+            <h2 className="font-poppins text-center lg:text-left font-semibold lg:text-h2 text-[32px] leading-9 text-white lg:leading-[60px] mb-7 sm:mt-7">
               Helping you overcome your any kind of Nutrition challenges
             </h2>
             <div className="flex flex-row items-center">
@@ -27,9 +24,8 @@ const Banner = () => {
               </Button>
             </div>
           </div>
-         
-          <div className="w-1/2 relative flex flex-col items-center justify-center">
-              <div className="absolute -top-14 -right-14">
+          <div className="basis-full md:basis-1/2 relative flex flex-col items-center justify-center">
+              <div className="hidden lg:block absolute -top-14 -right-14">
                 <Image
                   width={222}
                   height={222}
@@ -41,7 +37,7 @@ const Banner = () => {
               <Image
                 width={500}
                 height={350}
-                className="block"
+                className="p-5 lg:p-0"
                 src="/images/banners/help.png"
                 alt="Advertise banner"
               />

@@ -19,8 +19,8 @@ export default function Home() {
       <Nutrition />
       <Menu />
       <Video />
-      {/* <Banner /> */}
-      {/* <Blog /> */}
+      <Banner />
+      <Blog />
       <Testimonials />
       <Footer />
     </>
