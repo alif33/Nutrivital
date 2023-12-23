@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/container";
-import loginImage from "../../../assets/login.png";
 import { FcGoogle, IoEyeOffOutline, IoEye } from "@/icons"
 
 const SignIn = () => {
@@ -13,96 +12,97 @@ const SignIn = () => {
     alert("Login Successfull");
   };
   return (
-    <div className="">
-      <Container>
-        <div className="py-5 mb-2">
-          <Link className="flex gap-2" href="/">
-            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
-            <span className="text-2xl font-bold">Nutrivital</span>
-          </Link>
-        </div>
-        <div className="">
-          <h2 className="text-[#233B58] lg:mb-0 mb-5 w-full   text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
-            Login in to <span className="lg:block"></span> your account
+    <Container>
+      <div className="mb-2">
+        <Link className="flex gap-2" href="/">
+          <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+          <span className="text-2xl font-bold">Nutrivital</span>
+        </Link>
+      </div>
+      <div className="flex justify-center flex-col-reverse lg:flex-row gap-10">
+        {/* login left */}
+        <div className="basis-1/2 lg:pt-8">
+          <h2 className="text-[#233B58] lg:mb-0 mb-5 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
+            <span className="text-brand-1">Login</span> in to <span className="lg:block"></span> your account
           </h2>
-          <div className="flex  justify-between flex-col-reverse  lg:flex-row gap-10">
-            {/* login left */}
-            <div className="w-full lg:pt-8 lg:w-4/12 ">
-              <form onSubmit={handleSignIn} className="">
-                {/* Email Field */}
-                <div className="flex flex-col mb-5 lg:mb-8 gap-2">
-                  <label
-                    htmlFor="email"
-                    className="text-sm font-jakarta text-grey-400 "
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    required
-                    className=" bg-grey-200 duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
-                    type="email"
-                    name="email"
-                    id="email"
-                  />
-                </div>
-                {/* Name Field */}
-                <div className="flex  flex-col mb-3 gap-2">
-                  <label
-                    htmlFor="password"
-                    className="text-sm font-jakarta text-grey-400 "
-                  >
-                    Password
-                  </label>
-                  <div className="w-full relative">
-                    <input
-                      required
-                      className="bg-grey-200 duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white   outline-none p-5 w-full text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md"
-                      type={showPassword ? "text" : "password"}
-                      name="password"
-                      id="password"
-                    />
-                    {showPassword ? (
-                      <IoEyeOffOutline
-                        onClick={() => setShowPassowrd(!showPassword)}
-                        className="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
-                      />
-                    ) : (
-                      <IoEye
-                        onClick={() => setShowPassowrd(!showPassword)}
-                        className="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
-                      />
-                    )}
-                  </div>
-                </div>
-                <p className="text-brand-1 leading-[18px] font-normal text-sm font-jakarta">
-                  <Link href="/reset-password">Forgot Password?</Link>
-                </p>
+          <form onSubmit={handleSignIn} className="pt-5">
+            {/* Email Field */}
+            <div className="flex flex-col mb-5 lg:mb-5 gap-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-jakarta text-grey-400 "
+              >
+                Email Address
+              </label>
+              <input
+                required
+                className="input"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            {/* Name Field */}
+            <div className="flex flex-col gap-2">
+              <label
+                htmlFor="password"
+                className="text-sm font-jakarta text-grey-400 "
+              >
+                Password
+              </label>
+              <div className="relative">
                 <input
-                  type="submit"
-                  value="Login"
-                  className="bg-brand-1 cursor-pointer text-white font-semibold text-base font-jakarta py-5 px-10 w-full rounded-md mt-7 lg:mt-16"
+                  required
+                  className="input w-full"
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  id="password"
                 />
-              </form>
+                {showPassword ? (
+                  <IoEyeOffOutline
+                    onClick={() => setShowPassowrd(!showPassword)}
+                    className="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
+                  />
+                ) : (
+                  <IoEye
+                    onClick={() => setShowPassowrd(!showPassword)}
+                    className="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
+                  />
+                )}
+              </div>
+            </div>
+            <p className="text-brand-1 leading-[18px] font-normal text-sm font-jakarta float-right py-5">
+              <Link href="/reset-password">Forgot Password?</Link>
+            </p>
+            <input
+              type="submit"
+              value="Submit"
+              className="bg-brand-1 cursor-pointer text-white font-semibold text-base font-jakarta py-3 px-10 w-full rounded-md"
+            />
+          </form>
 
-              <button className="flex w-full  mt-2 py-5 rounded-md gap-1 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center ">
-                <FcGoogle className="text-3xl" />
-                Login with Google
-              </button>
-              <p className="text-grey-800 mt-3 mb-5 lg:mb-0 lg:mt-5 font-jakarta leading-[18px] font-normal text-sm ">
-                Don’t have an account?{" "}
-                <Link href="/sign-up">
-                  <span className="text-brand-1">Signup here.</span>
-                </Link>
-              </p>
-            </div>
-            {/* login right */}
-            <div className="w-full  lg:w-8/12   flex justify-end ">
-              <Image className="w-[70%]" src={loginImage} alt="Login Image" />
-            </div>
-          </div>
+          <button className="flex w-full  mt-2 py-5 rounded-md gap-1 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center">
+            <FcGoogle className="text-3xl" />
+            Login with Google
+          </button>
+          <p className="text-grey-800 mb-5 lg:mb-2 font-jakarta leading-[18px] font-normal text-sm text-center">
+            Don’t have an account?{" "}
+            <Link href="/sign-up">
+              <span className="text-brand-1">Signup here.</span>
+            </Link>
+          </p>
         </div>
-      </Container>
-    </div>
+        {/* login right */}
+        <div className="basis-1/2 flex justify-end">
+          <Image 
+            width={425}
+            height={400}
+            src="/images/login.svg" 
+            alt="Login Image" 
+          />
+        </div>
+      </div>
+    </Container>
   );
 };
 

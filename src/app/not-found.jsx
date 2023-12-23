@@ -1,30 +1,26 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/button";
-import pageNoteFoundImage from "../assets/page-not-found.png";
-import Container from "@/components/ui/container";
 import Navbar from "@/components/common/navbar";
+import Container from "@/components/ui/container";
+import { SlMagnifier } from "@/icons"; 
 import Footer from "@/components/common/footer";
 
 const NotFoundPage = () => {
   return (
     <div>
+      <Navbar />
       <Container>
-        <Navbar />
         <div className="flex flex-col justify-center items-center w-full my-20">
-          <Image
-            src={pageNoteFoundImage}
-            alt="Page not found"
-            height="auto"
-            className="w-[150px]  lg:w-[20%] "
-          />
-
+          <SlMagnifier
+            size={150}
+            className="text-brand-1"
+          />      
           <h1 className="font-poppins text-[124px] lg:text-[200px] font-semibold text-brand-2 leading-tight">
             404
           </h1>
           <p className="text-2xl lg:text-3xl font-normal font-urbanist text-grey-500">
-            page could not fround
+            Not Found
           </p>
           <Link className="mt-14 " href="/">
             <Button

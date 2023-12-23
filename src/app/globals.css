@@ -4,3 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.input {
+    @apply border border-grey-400 h-[50px] duration-300 focus:shadow-md focus:shadow-grey-400 focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md;
+}

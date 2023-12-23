@@ -31,6 +31,7 @@ import { TfiClose } from "react-icons/tfi";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { LuApple } from "react-icons/lu";
 import { RiMentalHealthFill } from "react-icons/ri";
+import { SlMagnifier } from "react-icons/sl";
 
 export {
     FcGoogle, 
@@ -57,5 +58,6 @@ export {
     TfiClose,
     BiSolidQuoteAltLeft,
     LuApple,
-    RiMentalHealthFill
+    RiMentalHealthFill,
+    SlMagnifier 
 };
