@@ -7,17 +7,20 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="bg-brand-2 text-white pt-20 pb-12">
-      <Container>
-        <div className="grid grid-cols-12 lg:gap-10 gap-14">
+      <div className="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+      {/* <Container> */}
+        <div className=" lg:gap-10 gap-14">
           {/* brand footer */}
           <div className="col-span-12 md:col-span-6 lg:col-span-5">
             <Link className="flex gap-2" href="/">
               <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
               <span className="text-2xl font-bold">Nutrivital</span>
             </Link>
-            <p className="lg:my-10 my-8 text-xs font-medium text-grey-200">
-              Always take  care of your health starting from the food menu that you consume every day.
-            </p>
+            <div className="max-w-[400px]">
+              <p className="lg:my-10 my-8 text-justify text-xs font-medium text-grey-200">
+                Always take  care of your health starting from the food menu that you consume every day.
+              </p>
+            </div>
             <div className="w-full">
               <button
                 className="flex w-[300px] md:w-full items-center justify-center flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
@@ -69,7 +72,8 @@ const Footer = () => {
             © 2023 Copyright By StackBuzz Inc. All Rights Reserved.
           </p>
         </div>
-      </Container>
+      {/* </Container> */}
+      </div>
     </div>
   );
 };
