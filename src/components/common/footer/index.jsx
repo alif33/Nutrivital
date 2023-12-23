@@ -7,23 +7,20 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="bg-brand-2 text-white pt-20 pb-12">
-      <div className="lg:max-w-6xl lg:pt-4 mx-auto px-4">
-      {/* <Container> */}
-        <div className=" lg:gap-10 gap-14">
+      <Container>
+        <div className="flex flex-row flex-wrap lg:gap-10 gap-14">
           {/* brand footer */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-5">
+          <div className="basis-full md:basis-6/12 lg:basis-4/12">
             <Link className="flex gap-2" href="/">
               <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
               <span className="text-2xl font-bold">Nutrivital</span>
             </Link>
-            <div className="max-w-[400px]">
-              <p className="lg:my-10 my-8 text-justify text-xs font-medium text-grey-200">
-                Always take  care of your health starting from the food menu that you consume every day.
-              </p>
-            </div>
+            <p className="lg:my-10 my-8 text-justify text-xs font-medium text-grey-200">
+              Always take  care of your health starting from the food menu that you consume every day.
+            </p>
             <div className="w-full">
               <button
-                className="flex w-[300px] md:w-full items-center justify-center flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
+                className="flex w-full items-center justify-center flex-row gap-1 lg:gap-2 bg-brand-1 py-2 px-4 text-xs lg:text-sm text-white"
               >
                 <IoCallOutline />
                 <span className="text"> (973) 068 2300</span>
@@ -31,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
            {/* company footer */}
-           <div className="col-span-12 md:col-span-6 lg:col-span-2">
+           <div className="basis-full md:basis-5/12 lg:basis-2/12">
               <h3 className="text-xl mb-3 font-semibold  font-urbanist">Company</h3>
               <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
                 <Link href="/blog">Blog</Link>
@@ -41,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
             {/* quick-links footer */}
-            <div className="col-span-12 md:col-span-6 lg:col-span-2">
+            <div className="basis-full md:basis-5/12 lg:basis-2/12">
               <h3 className="text-xl mb-3 font-semibold  font-urbanist">Quick Links</h3>
               <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
                 <Link href="/blog">Privacy Policy</Link>
@@ -49,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
             {/* contact footer */}
-            <div className="col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="basis-full md:basis-5/12 lg:basis-2/12">
               <ul className="flex flex-col gap-3">
                 <li>
                   <h5 className="text-sm font-bold pb-1">Phone :</h5>
@@ -72,8 +69,7 @@ const Footer = () => {
             © 2023 Copyright By StackBuzz Inc. All Rights Reserved.
           </p>
         </div>
-      {/* </Container> */}
-      </div>
+      </Container>
     </div>
   );
 };
