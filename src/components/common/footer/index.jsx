@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <div className="grid grid-cols-12 justify-center lg:gap-10 gap-14">
           {/* brand footer */}
-          <div className="col-span-6 md:col-span-6 lg:col-span-5 order-1">
+          <div className="col-span-6 md:col-span-6 lg:col-span-5">
             <Link className="flex gap-2" href="/">
               <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
               <span className="text-2xl font-bold">Nutrivital</span>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
           </div>
            {/* company footer */}
-           <div className="col-span-6 md:col-span-6 lg:col-span-2 order-2 md:order-3 lg:order-2">
+           <div className="col-span-6 md:col-span-6 lg:col-span-2">
               <h3 className="text-xl mb-3 font-semibold  font-urbanist">Company</h3>
               <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
                 <Link href="/blog">Blog</Link>
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </div>
             {/* quick-links footer */}
-            <div className="col-span-6 md:col-span-6 lg:col-span-2 order-3 md:order-4 lg:order-3">
+            <div className="col-span-6 md:col-span-6 lg:col-span-2">
               <h3 className="text-xl mb-3 font-semibold  font-urbanist">Quick Links</h3>
               <div className="flex flex-col font-medium text-lg text-[#AAAAAA] gap-3">
                 <Link href="/blog">Privacy Policy</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
             </div>
             {/* contact footer */}
-            <div className="col-span-6 md:col-span-6 lg:col-span-3 order-4 md:order-2 lg:order-4">
+            <div className="col-span-6 md:col-span-6 lg:col-span-3">
               <ul className="flex flex-col gap-3">
                 <li>
                   <h5 className="text-sm font-bold pb-1">Phone :</h5>
