@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
+import Link from "next/link";
 import Container from "@/components/ui/container";
 import Image from "next/image";
 import { FaArrowRight } from "@/icons";
-import Button from "@/components/ui/button";
 
 const Banner = () => {
   return (
@@ -13,16 +13,12 @@ const Banner = () => {
             <h2 className="font-poppins text-center lg:text-left font-semibold text-[24px] md:text-[32px] lg:text-h2 leading-9 text-white lg:leading-[60px] mb-7 pt-7 md:pt-0">
               Helping you overcome your any kind of Nutrition challenges
             </h2>
-            <div className="flex flex-row items-center">
-              <Button
-                text="See Pricings"
-                bgColor={"bg-[#ffffff]"}
-                color="text-[#2A9D8F]"
-                btnPadding={"py-3 px-14"}
-              >
-                <FaArrowRight />
-              </Button>
-            </div>
+            <Link
+              href="/blog"
+              className="flex flex-row gap-2 items-center py-3 px-14 hover:bg-[#57d8c9d8] duration-500 active:bg-brand-1 font-medium text-[#2A9D8F] text-sm bg-[#ffffff] rounded-md"
+            >
+              <span>See Pricings</span> <FaArrowRight />
+            </Link>
           </div>
           <div className="basis-full md:basis-1/2 relative flex flex-col items-center justify-center">
               <div className="hidden lg:block absolute -top-14 -right-14">
