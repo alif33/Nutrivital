@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Container from "@/components/ui/container";
 import Image from "next/image";
+import Container from "@/components/ui/container";
 import { FaArrowRight } from "@/icons";
 
 const Banner = () => {
