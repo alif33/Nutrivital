@@ -72,7 +72,7 @@ const ResetPassword = () => {
                 </Link>
               </p>
               <p className="text-grey-800 text-center mt-3 font-jakarta leading-[18px] font-normal text-sm ">
-                Don’t have an account?
+                Don’t have an account?{" "}
                 <Link href="/sign-up">
                   <span className="text-brand-1">Signup here.</span>
                 </Link>
