@@ -3,7 +3,7 @@ import { FaLink, FaTwitter, FaFacebookF, FaInstagram } from "@/icons";
 
 const Footer = ({ date, author }) => {
   return (
-    <div className="flex flex-row pt-10 justify-between">
+    <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap pt-10 justify-between">
       {/* post footer left */}
       <div className="">
         <p className="text-grey-500 font-urbanist text-lg">
@@ -14,7 +14,7 @@ const Footer = ({ date, author }) => {
         </p>
       </div>
       {/* post footer right */}
-      <div className="flex items-center justify-end flex-row gap-4">
+      <div className="flex items-center flex-row mt-5 md:mt-0 gap-4">
         <p className="text-grey-500 font-urbanist text-lg">
           Share this article
         </p>

@@ -12,12 +12,12 @@ const Header = () => {
           src={"/images/blogs/banner.svg"}
           alt="Banner Image"
         />
-        <div className="my-8 pb-8 flex lg:flex-row gap-10 border-b  border-b-grey-300">
-          <h2 className="text-h2 lg:w-[70%] pt-6 font-poppins text-grey-900 font-semibold leading-tight">
+        <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap my-8 pb-8 gap-10 border-b border-b-grey-300">
+          <h2 className="text-[28px] md:text-[34px] lg:text-h2 md:w-[65%] lg:w-[70%] pt-6 font-poppins text-grey-900 font-semibold leading-tight">
             FRevitalize Through Nutrient-Rich Choices
           </h2>
 
-          <div className="flex lg:w-[30%] py-5   flex-row gap-3">
+          <div className="flex md:w-[35%] lg:w-[30%] md:my-2 gap-3">
             <Image
               width={80}
               height={80}
@@ -26,7 +26,7 @@ const Header = () => {
               alt="Author Image"
             />
             <div className="">
-              <h4 className="font-semibold font-poppins text-3xl text-secondary-1 leading-normal">
+              <h4 className="font-semibold font-poppins text-[22px] md:text-[26px] lg:text-[28px] text-secondary-1 leading-normal">
                 AJOY SARKER
               </h4>
               <p className="text-lg font-urbanist leading-8 text-grey-400">

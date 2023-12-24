@@ -8,7 +8,7 @@ const Sidebar = ({ setSideMenu }) => {
     <>
       <button
         onClick={() => setSideMenu(false)}
-        className="flex flex-row justify-end   rounded-md   p-3 "
+        className="flex flex-row justify-end rounded-md p-3 "
       >
         <TfiClose className="text-2xl" />
       </button>

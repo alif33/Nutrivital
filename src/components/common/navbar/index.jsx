@@ -14,7 +14,7 @@ const Navbar = ({ children }) => {
       <Container>
       <div className="flex flex-row justify-between w-full  items-center py-2 ">
         {/* Navbar Left */}
-          <Link className="flex gap-2" href="/">
+          <Link className="flex gap-2 sm:items-center" href="/">
             <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>

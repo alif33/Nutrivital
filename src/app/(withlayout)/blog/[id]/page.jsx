@@ -8,17 +8,8 @@ import Footer from "@/components/blog-details/footer";
 import BlogSection from "@/components/blog/section";
 
 const BlogDetails = ({
-  params,
-  searchParams,
-  title,
-  subtitle,
-  auth,
-  date,
-  authImage,
-  image,
-  content,
+  params
 }) => {
-  console.log(params);
   return (
     <div className="mt-20">
       <Container>
