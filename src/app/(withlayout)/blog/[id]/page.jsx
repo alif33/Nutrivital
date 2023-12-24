@@ -28,7 +28,7 @@ const BlogDetails = ({
         <div className="">
           {/* content -1  */}
           <Content
-            title={"Top new features"}
+            title={"Nutrition for Vibrant Living"}
             content={[
               {
                 pera: "Whether your team is spread around a conference table or around the world, a productive brainstorm can feel like a win, eng the players and producing valuable content.",
@@ -43,7 +43,7 @@ const BlogDetails = ({
           />
           {/* Content - 2 */}
           <Content
-            title={"TLead Generation: The Power Of “Free Samples”"}
+            title={"Energize with Smart Nutrition"}
             content={[
               {
                 pera: "It’s easy to simply gather your group, state your problem, and ask for ideas. But is this the most efficient way to generate fresh, productive ideas? There are specialised methods for brainstorming that take idea generation seriously, and you may want to give some a try. They include:",

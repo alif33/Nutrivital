@@ -22,10 +22,17 @@ const Video = () => {
         <div className="mt-20 flex flex-col  lg:flex-row gap-6">
           <Card
             title={"Three-pronged intermediate movement"}
-            image={"/images/videos/video-1.png"}
+            image={"/images/videos/video-poster-1.svg"}
           />
-          <Card title={"Basic style of flexibility"} image={"/images/videos/video-2.png"} />
-          <Card title={"Reverse "} half={true} image={"/images/videos/video-3.png"} />
+          <Card
+            title={"Basic style of flexibility"}
+            image={"/images/videos/video-poster-2.svg"}
+          />
+          <Card
+            title={"Reverse "}
+            half={true}
+            image={"/images/videos/video-poster-3.svg"}
+          />
         </div>
       </Container>
     </div>

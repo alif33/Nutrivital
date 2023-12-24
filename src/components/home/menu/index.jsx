@@ -33,11 +33,11 @@ const Menu = () => {
           </div>
           {/* right */}
           <div className="lg:w-6/12">
-            <Image 
-                width={505}
-                height={611}
-                src="/images/banners/menu.png" 
-                alt="Menu Image" 
+            <Image
+              width={505}
+              height={611}
+              src="/images/banners/menu.svg"
+              alt="Menu Image"
             />
           </div>
         </div>

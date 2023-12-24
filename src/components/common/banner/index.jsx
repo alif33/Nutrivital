@@ -34,7 +34,7 @@ const Banner = () => {
                 width={500}
                 height={350}
                 className="p-5 lg:p-0"
-                src="/images/banners/help.png"
+                src="/images/banners/banner-2.svg"
                 alt="Advertise banner"
               />
           </div>

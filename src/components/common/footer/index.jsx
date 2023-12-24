@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import { IoCallOutline } from "@/icons";
+import { IoCallOutline, FaFacebookF, FaTwitter, FaInstagram } from "@/icons";
 
 const Footer = () => {
   return (
@@ -64,35 +64,14 @@ const Footer = () => {
             </div>
         </div>
         {/* footer bottom */}
-        <div className="flex justify-center gap-3 pt-8 border-t border-grey-500 mt-12">
-          <p className="text-center text-sm lg:text-lg font-normal ">
+        <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center gap-7 pt-8 border-t border-grey-500 mt-12">
+          <p className="text-center text-sm lg:text-lg font-normal">
             © 2023 Copyright By StackBuzz Inc. All Rights Reserved.
           </p>
           <ul className="flex">
-            <li>
-              <Image
-                height={13}
-                width={13}
-                src="/images/icons/linkedin.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <Image
-                height={13}
-                width={13}
-                src="/images/icons/facebook.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <Image
-                height={13}
-                width={13}
-                src="/images/icons/twitter.svg"
-                alt=""
-              />
-            </li>
+            <li className="px-3 py-3 rounded-full border mx-1"><Link href="/"><FaFacebookF/></Link></li>
+            <li className="px-3 py-3 rounded-full border mx-1"><Link href="/"><FaTwitter/></Link></li>
+            <li className="px-3 py-3 rounded-full border mx-1"><Link href="/"><FaInstagram/></Link></li>
           </ul>
         </div>
       </Container>
