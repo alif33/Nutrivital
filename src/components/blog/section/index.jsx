@@ -6,7 +6,6 @@ import Card from "./card";
 import { IoIosArrowBack, IoIosArrowForward } from "@/icons"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
 
 const BlogSection = ({ sectionTitle }) => {
   const [swiper, setSwiper] = useState(null);

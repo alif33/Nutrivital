@@ -5,7 +5,6 @@ import Card from "./Card";
 import { FaArrowLeftLong, FaArrowRightLong } from "@/icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
 
 const Testimonial = () => {
   const [swiper, setSwiper] = useState(null);
