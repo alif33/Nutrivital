@@ -26,8 +26,8 @@ const SignUp = () => {
           {/* login left */}
           <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
             <div className="basis-full sm:basis-full md:basis-1/2 pt-3">
-              <h2 className="text-[#233B58] text-center lg:text-left leading-tight text-3xl lg:text-[40px] font-semibold">
-                Create account
+              <h2 className="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 text-center lg:text-left leading-tight text-3xl lg:text-[40px] font-semibold">
+                <span className="text-brand-1">Create</span> account
               </h2>
               <form onSubmit={handleSignUp} className="pt-5">
                 {/* Name Field */}

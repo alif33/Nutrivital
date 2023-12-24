@@ -21,8 +21,8 @@ const ResetPassword = () => {
           <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
             {/* login left */}
             <div className="basis-1/2 lg:w-4/12 lg:pt-4 h-full ">
-              <h2 className="text-[#233B58] leading-tight text-3xl lg:text-[40px] lg:text-left text-center font-semibold">
-                Create new <span className="lg:block"></span> password
+              <h2 className="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 leading-tight text-3xl lg:text-[40px] lg:text-left text-center font-semibold">
+                Create <span className="text-brand-1">new password</span>
               </h2>
               <form onSubmit={handleSignIn} className="mt-4">
                 {/* Password Field */}

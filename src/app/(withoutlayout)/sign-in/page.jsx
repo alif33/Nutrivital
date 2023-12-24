@@ -22,8 +22,8 @@ const SignIn = () => {
       <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
         {/* login left */}
         <div className="basis-1/2 lg:pt-8">
-          <h2 className="text-[#233B58] my-5 lg:my-0 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
-            <span className="text-brand-1">Login</span> in to <span className="lg:block"></span> your account
+          <h2 className="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
+            <span className="text-brand-1">Login</span> in to your account
           </h2>
           <form onSubmit={handleSignIn} className="pt-5">
             {/* Email Field */}
