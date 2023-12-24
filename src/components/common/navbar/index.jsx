@@ -15,7 +15,7 @@ const Navbar = ({ children }) => {
       <div className="flex flex-row justify-between w-full  items-center py-2 ">
         {/* Navbar Left */}
           <Link className="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
-            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+            <Image src="/placeholders/logo.svg" width={60} height={45} alt={"logo"} />
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         {/* Navbar Right */}

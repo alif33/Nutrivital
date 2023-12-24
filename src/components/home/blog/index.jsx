@@ -15,21 +15,21 @@ const Blog = () =>{
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 gap-5">
                 <BlogCard
-                    image="/images/blogs/blog-post-1.svg"
+                    image="/placeholders/blogs/blog-post-1.svg"
                     author={"BLOG, Saas"}
                     date={"11 May, 2023"}
                     title={"Vitality in Every Bite"}
                     desc="Guiding you on optimizing your nutritional choices to support your overall well-being..."
                 />
                 <BlogCard
-                    image="/images/blogs/blog-post-2.svg"
+                    image="/placeholders/blogs/blog-post-2.svg"
                     author={"BLOG, Saas"}
                     date={"11 May, 2023"}
                     title={"Nourish Your Way to Wellness"}
                     desc="Guiding you on optimizing your nutritional choices to support your overall well-being..."
                 />
                 <BlogCard
-                    image="/images/blogs/blog-post-3.svg"
+                    image="/placeholders/blogs/blog-post-3.svg"
                     author={"BLOG, Saas"}
                     date={"11 May, 2023"}
                     title={"Fueling Healthy Lifestyle Choices"}

@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import "./card.css";
 
 const Card = ({ image, title, desc, author, date }) => {
   return (
-    <div className="w-full rounded-3xl shadow hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out">
+    <Link href="/blog/1" className="w-full rounded-3xl shadow hover:bg-white hover:shadow-2xl hover:shadow-base-300 cursor-pointer duration-500 ease-in-out">
       <Image height={280} width={361} src={image} alt="News Image"/>
       <div className="w-full px-5 py-4">
         <div className="flex flex-row justify-between">
@@ -30,7 +31,7 @@ const Card = ({ image, title, desc, author, date }) => {
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

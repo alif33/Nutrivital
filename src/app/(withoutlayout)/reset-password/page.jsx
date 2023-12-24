@@ -14,7 +14,7 @@ const ResetPassword = () => {
       <Container>
         <div className="py-5 mb-2">
           <Link className="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
-            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
+            <Image src="/placeholders/logo.svg" width={60} height={45} alt={"logo"} />
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         </div>
@@ -84,7 +84,7 @@ const ResetPassword = () => {
                 width={497}
                 height={364}
                 className="hidden md:block"
-                src="/images/reset-password.svg"
+                src="/placeholders/reset-password.svg"
                 alt="Reset Password"
               />
             </div>

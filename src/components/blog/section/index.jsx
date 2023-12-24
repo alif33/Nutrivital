@@ -67,7 +67,7 @@ const BlogSection = ({ sectionTitle }) => {
         >
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-1.svg"
+              image="/placeholders/blogs/blog-post-1.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Vitality in Every Bite"}
@@ -76,7 +76,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-2.svg"
+              image="/placeholders/blogs/blog-post-2.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Nourish Your Way to Wellness"}
@@ -85,7 +85,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-3.svg"
+              image="/placeholders/blogs/blog-post-3.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Fueling Healthy Lifestyle Choices"}
@@ -94,7 +94,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-1.svg"
+              image="/placeholders/blogs/blog-post-1.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Vitality in Every Bite"}
@@ -103,7 +103,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-2.svg"
+              image="/placeholders/blogs/blog-post-2.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Nourish Your Way to Wellness"}
@@ -112,7 +112,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-3.svg"
+              image="/placeholders/blogs/blog-post-3.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Fueling Healthy Lifestyle Choices"}
@@ -121,7 +121,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/blog-post-1.svg"
+              image="/placeholders/blogs/blog-post-1.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Vitality in Every Bite"}
@@ -130,7 +130,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/02.png"
+              image="/placeholders/blogs/blog-post-2.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Nourish Your Way to Wellness"}
@@ -139,7 +139,7 @@ const BlogSection = ({ sectionTitle }) => {
           </SwiperSlide>
           <SwiperSlide>
             <Card
-              image="/images/blogs/03.png"
+              image="/placeholders/blogs/blog-post-3.svg"
               author={"BLOG, Saas"}
               date={"11 May, 2023"}
               title={"Fueling Healthy Lifestyle Choices"}

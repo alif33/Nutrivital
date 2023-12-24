@@ -9,7 +9,7 @@ const Header = () => {
         <Image
           height={507}
           width={1136}
-          src={"/images/blogs/banner.svg"}
+          src={"/placeholders/blogs/banner.svg"}
           alt="Banner Image"
         />
         <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap my-8 pb-8 gap-10 border-b border-b-grey-300">
@@ -21,7 +21,7 @@ const Header = () => {
             <Image
               width={80}
               height={80}
-              src={"/images/blogs/avatar.svg"}
+              src={"/placeholders/blogs/avatar.svg"}
               className="w-20 h-20 rounded-full"
               alt="Author Image"
             />

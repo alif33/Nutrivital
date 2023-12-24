@@ -27,19 +27,19 @@ const Form = () => {
               <Card
                 cardPadding={"py-4"}
                 title={"Facebook"}
-                subtitle={"iravit_Official"}
+                subtitle={"nutrival_Official"}
                 icon={<FaFacebookF size={30} className="text-white"/>}
               />
               <Card
                 cardPadding={"py-4"}
                 title={"Twitter"}
-                subtitle={"iravit_Official"}
+                subtitle={"nutrival_Official"}
                 icon={<FaTwitter size={30} className="text-white"/>}
               />
               <Card
                 cardPadding={"py-4"}
                 title={"Instagram"}
-                subtitle={"iravit_Official"}
+                subtitle={"nutrival_Official"}
                 icon={<FaInstagram size={30} className="text-white"/>}
               />
             </div>
