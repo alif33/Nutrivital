@@ -13,7 +13,7 @@ const ResetPassword = () => {
     <div className="">
       <Container>
         <div className="py-5 mb-2">
-          <Link className="flex gap-2" href="/">
+          <Link className="flex gap-2 mt-5 md:mt-3 lg:mt-0" href="/">
             <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
