@@ -36,7 +36,7 @@ const Menu = () => {
             <Image
               width={505}
               height={611}
-              src="/placeholders/banners/menu.svg"
+              src="/images/banners/menu.svg"
               alt="Menu Image"
             />
           </div>

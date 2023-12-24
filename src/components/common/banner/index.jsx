@@ -26,7 +26,7 @@ const Banner = () => {
                   width={222}
                   height={222}
                   className="block"
-                  src="/placeholders/v-shape.svg"
+                  src="/images/v-shape.svg"
                   alt="Advertise banner"
                 />
               </div>
@@ -34,7 +34,7 @@ const Banner = () => {
                 width={500}
                 height={350}
                 className="p-5 lg:p-0"
-                src="/placeholders/banners/banner-2.svg"
+                src="/images/banners/banner-2.svg"
                 alt="Advertise banner"
               />
           </div>

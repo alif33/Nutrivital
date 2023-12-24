@@ -18,7 +18,7 @@ const SignUp = () => {
       <Container>
         <div className="mb-2">
           <Link className="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
-            <Image src="/placeholders/logo.svg" width={60} height={45} alt={"logo"} />
+            <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
             <span className="text-2xl font-bold">Nutrivital</span>
           </Link>
         </div>
@@ -115,7 +115,7 @@ const SignUp = () => {
                 width={600}
                 height={450}
                 className="hidden md:block"
-                src="/placeholders/register.svg" 
+                src="/images/register.svg" 
                 alt="Register Image" 
               />
             </div>

@@ -35,7 +35,7 @@ const Card = ({
               <Image 
                 height={20}
                 width={20}
-                src="/placeholders/icons/package-icon.svg" 
+                src="/images/icons/package-icon.svg" 
                 alt="Package Card" 
                />
               <p className="text-[16px] font-semibold  leading-7 font-urbanist">

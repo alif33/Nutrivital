@@ -24,7 +24,7 @@ const Services = ({ list, title, subtitle, titleColor }) => {
                     <Image 
                         width={20}
                         height={20}
-                        src="/placeholders/icons/package-icon.svg" 
+                        src="/images/icons/package-icon.svg" 
                         alt="Package Card" 
                     />
                   <p
@@ -47,7 +47,7 @@ const Services = ({ list, title, subtitle, titleColor }) => {
             <Image
               width={700}
               height={766}
-              src="/placeholders/banners/pricing.svg"
+              src="/images/banners/pricing.svg"
               className="w-full h-full"
               alt="Service Image"
             />

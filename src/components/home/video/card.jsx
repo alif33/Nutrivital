@@ -15,7 +15,7 @@ const VideoCard = ({ image, title, half }) => {
         <Image
           width={55}
           height={51}
-          src={"/placeholders/icons/play-icon.svg"}
+          src={"/images/icons/play-icon.svg"}
           alt="Play Icon"
           className="absolute top-[50%] left-[50%] cursor-pointer -translate-y-[50%] -translate-x-[50%]"
         />

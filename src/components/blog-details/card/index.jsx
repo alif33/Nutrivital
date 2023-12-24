@@ -8,7 +8,7 @@ const Card = () => {
         <Image
           width={570}
           height={340}
-          src={"/placeholders/blogs/blog-content-1.svg"}
+          src={"/images/blogs/blog-content-1.svg"}
           alt="Content Image"
         />
       </div>
@@ -16,7 +16,7 @@ const Card = () => {
         <Image
           width={570}
           height={340}
-          src={"/placeholders/blogs/blog-content-2.svg"}
+          src={"/images/blogs/blog-content-2.svg"}
           alt="Content Image"
         />
       </div>

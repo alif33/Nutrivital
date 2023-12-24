@@ -78,37 +78,37 @@ const Video = () => {
             <SwiperSlide>
               <Card
                 title={"Three-pronged intermediate movement"}
-                image={"/placeholders/videos/video-poster-1.svg"}
+                image={"/images/videos/video-poster-1.svg"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
                 title={"Basic style of flexibility"}
-                image={"/placeholders/videos/video-poster-2.svg"}
+                image={"/images/videos/video-poster-2.svg"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
                 title={"Three-pronged intermediate movement"}
-                image={"/placeholders/videos/video-poster-1.svg"}
+                image={"/images/videos/video-poster-1.svg"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
                 title={"Basic style of flexibility"}
-                image={"/placeholders/videos/video-poster-2.svg"}
+                image={"/images/videos/video-poster-2.svg"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
                 title={"Three-pronged intermediate movement"}
-                image={"/placeholders/videos/video-poster-1.svg"}
+                image={"/images/videos/video-poster-1.svg"}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
                 title={"Basic style of flexibility"}
-                image={"/placeholders/videos/video-poster-2.svg"}
+                image={"/images/videos/video-poster-2.svg"}
               />
             </SwiperSlide>
           </Swiper>

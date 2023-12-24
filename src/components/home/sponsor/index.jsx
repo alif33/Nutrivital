@@ -17,7 +17,7 @@ const Sponsor = () => {
             width={200}
             height={38}
             className="lg:p-6 p-3"
-            src={`/placeholders/companies/${company.name}`}
+            src={`/images/companies/${company.name}`}
             alt={`Company Image ${index}`}
           />)}
         </div>

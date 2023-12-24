@@ -36,7 +36,7 @@ const Hero = () => {
                 <Image
                   height={54}
                   width={203}
-                  src="/placeholders/trusted-customers.svg"
+                  src="/images/trusted-customers.svg"
                   alt="Trusted customers"
                 />
               </div>
@@ -47,7 +47,7 @@ const Hero = () => {
             <Image 
               width={505}
               height={791}
-              src="/placeholders/banners/banner.svg"
+              src="/images/banners/banner.svg"
               alt="Hero Image" 
             />
           </div>

@@ -12,7 +12,7 @@ const Footer = () => {
           {/* brand footer */}
           <div className="basis-full md:basis-6/12 lg:basis-4/12">
             <Link className="flex gap-2" href="/">
-              <Image src="/placeholders/logo.svg" width={60} height={45} alt={"logo"} />
+              <Image src="/images/logo.svg" width={60} height={45} alt={"logo"} />
               <span className="text-2xl font-bold">Nutrivital</span>
             </Link>
             <p className="lg:my-10 my-8 text-justify text-xs font-medium text-grey-200">
