@@ -1,0 +1,4 @@
+.blog-container:hover .news-button {
+    color: #2A9D8F;
+    transition-duration: 300ms;
+}
