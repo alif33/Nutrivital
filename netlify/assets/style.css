@@ -1,0 +1,10 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.menu-active{
+    background-color: #2A9D8F;
+}
+.menu-active h6{
+    color: white;
+}
