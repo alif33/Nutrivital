@@ -4,14 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/output/style.css">
 </head>
 <body>
-    
+    <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+        <div class="mb-2">
+          <a class="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
+            <img src="/assets/images/logo.svg" width="60px" height="45px" alt="Site logo" />
+            <span class="text-2xl font-bold">Nutrivital</span>
+          </a>
+        </div>
+        <div>
+          <div class="flex flex-col md:flex-row justify-between md:items-start gap-10">
+            <div class="basis-full sm:basis-full md:basis-1/2 pt-3">
+              <h2 class="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 text-center lg:text-left leading-tight text-3xl lg:text-[40px] font-semibold">
+                <span class="text-brand-1">Create</span> account
+              </h2>
+              <form onSubmit={handleSignUp} class="pt-5">
+                <div class="flex flex-col mb-3 lg:mb-4 gap-2">
+                  <label
+                    htmlFor="name"
+                    class="text-sm font-jakarta text-grey-400"
+                  >
+                    Name
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    required
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="flex flex-col mb-3 lg:mb-4 gap-2">
+                  <label
+                    htmlFor="email"
+                    class="text-sm font-jakarta text-grey-400 "
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="input"
+                  />
+                </div>
+                <div class="flex flex-col mb-3 lg:mb-4 gap-2">
+                  <label
+                    htmlFor="password"
+                    class="text-sm font-jakarta text-grey-400 "
+                  >
+                    Password
+                  </label>
+                  <div class="w-full relative">
+                    <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        class="input w-full"
+                    />
+                    <!-- {showPassword ? (
+                      <IoEyeOffOutline
+                        onClick={() => setShowPassowrd(!showPassword)}
+                        class="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
+                      />
+                    ) : (
+                      <IoEye
+                        onClick={() => setShowPassowrd(!showPassword)}
+                        class="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
+                      />
+                    )} -->
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="bg-brand-1 cursor-pointer text-white font-semibold text-base font-jakarta py-3 px-10 w-full rounded-md mt-7"
+                />
+              </form>
+
+              <button class="flex w-full mt-2 py-5 rounded-md gap-1 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center ">
+                <FcGoogle class="text-3xl" />
+                Signup with Google
+              </button>
+              <p class="text-grey-800 mb-5 lg:mb-0 font-jakarta leading-[18px] font-normal text-sm text-center">
+                Already have an account?
+                <a href="/sign-in.html">
+                  <span class="text-brand-1"> Login here</span>
+                </a>
+              </p>
+            </div>
+            <div class="basis-full sm:basis-full md:basis-1/2 items-centerflex justify-end ">
+              <img 
+                width="600px"
+                height="450px"
+                class="hidden md:block"
+                src="/assets/images/register.svg" 
+                alt="Register Image" 
+              />
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>

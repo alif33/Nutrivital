@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+.menu-active{
+    background-color: #2A9D8F;
+}
+.menu-active h6{
+    color: white;
+}
+
+.input {
+    @apply border h-[50px] duration-300 p-5 text-base text-[#233B58] font-normal leading-[18px] rounded-md;
+}
