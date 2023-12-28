@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+.menu-active{
+    background-color: #2A9D8F;
+}
+.menu-active h6{
+    color: white;
+}
+
+.input {
+    @apply border h-[50px] duration-300 focus:shadow-md focus:bg-white outline-none p-5 text-base placeholder:text-[#233B58] text-[#233B58] font-jakarta font-normal leading-[18px] rounded-md;
+}
