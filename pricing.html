@@ -11,94 +11,204 @@
     <link rel="stylesheet" href="/output/style.css">
 </head>
 <body>
-
-    <div class="my-14 lg:my-20">
-        <Container>
-          <div class="max-w-3xl mx-auto">
+    <div class="wrapper my-14 lg:my-20">
+        <div class="max-w-3xl mx-auto">
             <h3 class="text-brand-2 mb-10 text-center leading-tight font-semibold font-poppins text-[32px] lg:text-h3">
-              Pricing for everyone <span class="lg:block">and suitable</span>
+                Pricing for everyone <span class="lg:block">and suitable</span>
             </h3>
             <p class="mb-16 lg:mb-20 text-sm leading-5 lg:text-lg  text-center font-urbanist text-grey-500">
-              We started working on Taskable because we had the same problem. All
-              the tasks, files, and information we needed to get work done was
-              spread across Slack, email, project management tools, and cloud
-              storage.
+                We started working on Taskable because we had the same problem. All
+                the tasks, files, and information we needed to get work done was
+                spread across Slack, email, project management tools, and cloud
+                storage.
             </p>
-          </div>
-          <div class="mx-auto mb-10  text-center flex  w-[183px] rounded-md shadow-2xl  shadow-gray-500  p-1 bg-white">
+        </div>
+        <div class="mx-auto mb-10  text-center flex  w-[183px] rounded-md shadow-2xl  shadow-gray-500  p-1 bg-white">
             <button
-              class="py-3 ${ toggleButton ? "bg-brand-1 text-white" : "text-grey-950 ease-in-out bg-white duration-300" } px-6   font-bold duration-500 text-sm rounded-md`}>
-              Yearly
+                class="py-3 ${ toggleButton ? "bg-brand-1 text-white" : "text-grey-950 ease-in-out bg-white duration-300" } px-6   font-bold duration-500 text-sm rounded-md`}>
+                Monthly
             </button>
             <button
-              class={`py-3 px-6  ${
+                class={`py-3 px-6  ${
                 !toggleButton
-                  ? "bg-brand-1 text-white"
-                  : "text-grey-950  ease-in-out bg-white "
-              }  text-sm rounded-md font-bold duration-500`}
+                    ? "bg-brand-1 text-white"
+                    : "text-grey-950  ease-in-out bg-white "
+                }  text-sm rounded-md font-bold duration-500`}
             >
-              Yearly
+                Yearly
             </button>
-          </div>
-          <div class="flex flex-col lg:flex-row justify-between gap-7">
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-7">
+            <div class="shadow-lg ${cardColor} shadow-base-300 flex flex-col justify-between w-full py-10 px-8 ${cardBg}">
+                <div class="">
+                <div class="pb-8 border-b border-gray-300 mb-8">
+                    <h4 class="text-xl  font-semibold font-urbanist leading-7">
+                        Starter
+                    </h4>
+                    <h1 class="font-urbanist text-3xl leading-8 font-medium">
+                    ${" "}
+                    <span class="text-h1 leading-normal font-extrabold">
+                        5.00
+                    </span>
+                    </h1>
+                    <p class="">Per Month</p>
+                </div>
+                <div class="flex flex-col gap-4 justify-center mb-5">
+                    <div class="flex flex-row gap-2 items-center">
+                        <img 
+                            height={20}
+                            width={20}
+                            src="/images/icons/package-icon.svg" 
+                            alt="Package Card" 
+                        />
+                        <p class="text-[16px] font-semibold leading-7 font-urbanist">
+                            {item.name}
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="mx-auto ">
+                <Button
+                    bgColor={btnBg}
+                    color={btnColor}
+                    text={"Get Started"}
+                    btnPadding={"px-10 py-3"}
+                />
+                </div>
+            </div>
+            <div class="shadow-lg ${cardColor} shadow-base-300 flex flex-col justify-between w-full py-10 px-8 ${cardBg}">
+                <div class="">
+                <div class="pb-8 border-b border-gray-300 mb-8">
+                    <h4 class="text-xl  font-semibold font-urbanist leading-7">
+                        Starter
+                    </h4>
+                    <h1 class="font-urbanist text-3xl leading-8 font-medium">
+                    ${" "}
+                    <span class="text-h1 leading-normal font-extrabold">
+                        5.00
+                    </span>
+                    </h1>
+                    <p class="">Per Month</p>
+                </div>
+                <div class="flex flex-col gap-4 justify-center mb-5">
+                    <div class="flex flex-row gap-2 items-center">
+                        <img 
+                            height={20}
+                            width={20}
+                            src="/images/icons/package-icon.svg" 
+                            alt="Package Card" 
+                        />
+                        <p class="text-[16px] font-semibold leading-7 font-urbanist">
+                            {item.name}
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="mx-auto ">
+                <Button
+                    bgColor={btnBg}
+                    color={btnColor}
+                    text={"Get Started"}
+                    btnPadding={"px-10 py-3"}
+                />
+                </div>
+            </div>
+            <div class="shadow-lg ${cardColor} shadow-base-300 flex flex-col justify-between w-full py-10 px-8 ${cardBg}">
+                <div class="">
+                <div class="pb-8 border-b border-gray-300 mb-8">
+                    <h4 class="text-xl  font-semibold font-urbanist leading-7">
+                        Starter
+                    </h4>
+                    <h1 class="font-urbanist text-3xl leading-8 font-medium">
+                    ${" "}
+                    <span class="text-h1 leading-normal font-extrabold">
+                        5.00
+                    </span>
+                    </h1>
+                    <p class="">Per Month</p>
+                </div>
+                <div class="flex flex-col gap-4 justify-center mb-5">
+                    <div class="flex flex-row gap-2 items-center">
+                        <img 
+                            height={20}
+                            width={20}
+                            src="/images/icons/package-icon.svg" 
+                            alt="Package Card" 
+                        />
+                        <p class="text-[16px] font-semibold leading-7 font-urbanist">
+                            {item.name}
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="mx-auto ">
+                <Button
+                    bgColor={btnBg}
+                    color={btnColor}
+                    text={"Get Started"}
+                    btnPadding={"px-10 py-3"}
+                />
+                </div>
+            </div>
+
+
+
+
             <Card
-              name="Starter"
-              price={"5.00"}
-              duration={"Month"}
-              btnBg={"bg-grey-950"}
-              btnColor={"text-white"}
-              list={[
+                name="Starter"
+                price={"5.00"}
+                duration={"Month"}
+                btnBg={"bg-grey-950"}
+                btnColor={"text-white"}
+                list={[
                 { name: "3 Social Media Account" },
                 { name: "Free Platform Access" },
                 { name: "24/7 Customer Support" },
-              ]}
+                ]}
             />
             <Card
-              cardColor={"text-white"}
-              cardBg="bg-brand-2"
-              btnBg={"bg-brand-1"}
-              btnColor={"text-white"}
-              name="Premium"
-              price={"25.00"}
-              duration={"Month"}
-              list={[
+                cardColor={"text-white"}
+                cardBg="bg-brand-2"
+                btnBg={"bg-brand-1"}
+                btnColor={"text-white"}
+                name="Premium"
+                price={"25.00"}
+                duration={"Month"}
+                list={[
                 { name: "10 Social Media Account" },
                 { name: "Free Platform Access" },
                 { name: "24/7 Customer Support" },
                 { name: "24/7 Customer Support" },
-              ]}
+                ]}
             />
             <Card
-              btnBg={"bg-grey-950"}
-              btnColor={"text-white"}
-              name="Basic"
-              price={"5.00"}
-              duration={"Month"}
-              list={[
+                btnBg={"bg-grey-950"}
+                btnColor={"text-white"}
+                name="Basic"
+                price={"5.00"}
+                duration={"Month"}
+                list={[
                 { name: "5 Social Media Account" },
                 { name: "Free Platform Access" },
                 { name: "24/7 Customer Support" },
                 { name: "24/7 Customer Support" },
                 { name: "24/7 Customer Support" },
-              ]}
+                ]}
             />
-          </div>
-        </Container>
-      </div>
-<Services
-  titleColor={"text-grey-900"}
-  title={"Why choose us?"}
-  subtitle={
-    "Consistent quality and experience across all platforms and devices."
-  }
-  list={[
-    { name: "Simple drag & drop editor" },
-    { name: "Engaging & personalized content" },
-    { name: "Responsive and mobile ready" },
-    { name: "Online financial exchanges for currency " },
-  ]}
-/>
-
-
+        </div>
+    </div>
+    <Services
+        titleColor={"text-grey-900"}
+        title={"Why choose us?"}
+        subtitle={
+            "Consistent quality and experience across all platforms and devices."
+    }
+    list={[
+        { name: "Simple drag & drop editor" },
+        { name: "Engaging & personalized content" },
+        { name: "Responsive and mobile ready" },
+        { name: "Online financial exchanges for currency " },
+    ]}
+    />
 </body>
 </html>
