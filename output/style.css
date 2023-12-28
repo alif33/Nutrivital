@@ -693,6 +693,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -725,6 +729,10 @@ video {
   height: 50px;
 }
 
+.h-\[60px\]{
+  height: 60px;
+}
+
 .h-full{
   height: 100%;
 }
@@ -733,20 +741,20 @@ video {
   height: 100vh;
 }
 
-.h-\[60px\]{
-  height: 60px;
-}
-
 .w-2{
   width: 0.5rem;
+}
+
+.w-\[60px\]{
+  width: 60px;
 }
 
 .w-full{
   width: 100%;
 }
 
-.w-\[60px\]{
-  width: 60px;
+.w-\[183px\]{
+  width: 183px;
 }
 
 .max-w-3xl{
@@ -966,6 +974,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-grey-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 9 30 / var(--tw-bg-opacity));
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -984,6 +997,10 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-1{
@@ -1340,6 +1357,11 @@ video {
   color: rgb(33 41 54 / var(--tw-text-opacity));
 }
 
+.text-grey-900{
+  --tw-text-opacity: 1;
+  color: rgb(11 10 15 / var(--tw-text-opacity));
+}
+
 .text-grey-950{
   --tw-text-opacity: 1;
   color: rgb(4 9 30 / var(--tw-text-opacity));
@@ -1348,11 +1370,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-grey-900{
-  --tw-text-opacity: 1;
-  color: rgb(11 10 15 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1381,8 +1398,19 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-grey-300{
   --tw-shadow-color: #D3D5DA;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-500{
+  --tw-shadow-color: #6b7280;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1609,6 +1637,11 @@ body {
     margin-bottom: 8rem;
   }
 
+  .lg\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .lg\:mb-0{
     margin-bottom: 0px;
   }
@@ -1643,6 +1676,10 @@ body {
 
   .lg\:mt-auto{
     margin-top: auto;
+  }
+
+  .lg\:mb-20{
+    margin-bottom: 5rem;
   }
 
   .lg\:block{
@@ -1782,6 +1819,11 @@ body {
     padding-right: 1.75rem;
   }
 
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .lg\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1790,11 +1832,6 @@ body {
   .lg\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-24{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 
   .lg\:pt-4{
