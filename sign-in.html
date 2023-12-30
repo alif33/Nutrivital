@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/output/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/output/style.css">
 </head>
+
 <body>
-    <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
-        <div class="mb-2">
-          <a class="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
-            <img src="/assets/images/logo.svg" width="60px" height="45px" alt="Site Logo"/>
-            <span class="text-2xl font-bold">Nutrivital</span>
-          </a>
-        </div>
-        <div class="flex flex-col md:flex-row justify-between md:items-start gap-10">
-          <div class="basis-1/2 lg:pt-8">
-            <h2 class="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
-              <span class="text-brand-1">Login</span> in to your account
-            </h2>
-            <form onSubmit={handleSignIn} class="pt-5">
-              <div class="flex flex-col mb-5 lg:mb-5 gap-2">
-                <label
-                  htmlFor="email"
-                  class="text-sm font-jakarta text-grey-400 "
-                >
-                  Email Address
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  class="border h-[50px] duration-300 focus:shadow-md p-5 text-base font-jakarta font-normal leading-[18px] rounded-md"
-                />
-              </div>
-              <div class="flex flex-col gap-2">
-                <label
-                  htmlFor="password"
-                  class="text-sm font-jakarta text-grey-400 "
-                >
-                  Password
-                </label>
-                <div class="relative">
-                  <input
-                    required
-                    class="input w-full"
-                    type="password"
-                    name="password"
-                    id="password"
-                  />
-                  <!-- {showPassword ? (
+  <div class="lg:max-w-6xl lg:pt-4 mx-auto px-4">
+    <div class="mb-2">
+      <a class="flex gap-2 mt-3 md:mt-3 lg:mt-0" href="/">
+        <img src="/assets/images/logo.svg" width="60px" height="45px" alt="Site Logo" />
+        <span class="text-2xl font-bold">Nutrivital</span>
+      </a>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between md:items-start gap-10">
+      <div class="basis-1/2 lg:pt-8">
+        <h2
+          class="text-[#233B58] mt-14 mb-5 md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 w-full text-[28px] leading-tight lg:text-[40px] font-semibold lg:text-left text-center ">
+          <span class="text-brand-1">Login</span> in to your account
+        </h2>
+        <form onSubmit={handleSignIn} class="pt-5">
+          <div class="flex flex-col mb-5 lg:mb-5 gap-2">
+            <label htmlFor="email" class="text-sm font-jakarta text-grey-400 ">
+              Email Address
+            </label>
+            <input id="email" name="email" type="email"
+              class="border h-[50px] duration-300 focus:shadow-md p-5 text-base font-jakarta font-normal leading-[18px] rounded-md" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label htmlFor="password" class="text-sm font-jakarta text-grey-400 ">
+              Password
+            </label>
+            <div class="relative">
+              <input required class="input w-full" type="password" name="password" id="password" />
+              <!-- {showPassword ? (
                     <IoEyeOffOutline
                       onClick={() => setShowPassowrd(!showPassword)}
                       class="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
@@ -65,39 +55,32 @@
                       class="absolute right-3 top-4 text-2xl text-grey-500 cursor-pointer"
                     />
                   )} -->
-                </div>
-              </div>
-              <p class="text-brand-1 leading-[18px] font-normal text-sm font-jakarta float-right py-5">
-                <a href="/reset-password.html">Forgot Password?</a>
-              </p>
-              <input
-                type="submit"
-                value="Submit"
-                class="bg-brand-1 cursor-pointer text-white font-semibold text-base font-jakarta py-3 px-10 w-full rounded-md"
-              />
-            </form>
-  
-            <button class="flex w-full  mt-2 py-5 rounded-md gap-1 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center">
-              <FcGoogle class="text-3xl" />
-              Login with Google
-            </button>
-            <p class="text-grey-800 mb-5 lg:mb-2 font-jakarta leading-[18px] font-normal text-sm text-center">
-              Don’t have an account?{" "}
-              <a href="/sign-up.html">
-                <span class="text-brand-1">Signup here.</span>
-              </a>
-            </p>
+            </div>
           </div>
-          <div class="basis-full md:basis-1/2 flex justify-end">
-            <img 
-              width="425px"
-              height="400px"
-              class="hidden md:block"
-              src="/assets/images/login.svg" 
-              alt="Login Image" 
-            />
-          </div>
-        </div>
+          <p class="text-brand-1 leading-[18px] font-normal text-sm font-jakarta float-right py-5">
+            <a href="/reset-password.html">Forgot Password?</a>
+          </p>
+          <input type="submit" value="Submit"
+            class="bg-brand-1 cursor-pointer text-white font-semibold text-base font-jakarta py-3 px-10 w-full rounded-md" />
+        </form>
+
+        <button
+          class="flex w-full  mt-2 py-5 rounded-md gap-1 text-base font-semibold font-jakarta leading-5 text-[#233B58] flex-row items-center justify-center">
+          <FcGoogle class="text-3xl" />
+          Login with Google
+        </button>
+        <p class="text-grey-800 mb-5 lg:mb-2 font-jakarta leading-[18px] font-normal text-sm text-center">
+          Don’t have an account?
+          <a href="/sign-up.html">
+            <span class="text-brand-1">Signup here.</span>
+          </a>
+        </p>
+      </div>
+      <div class="basis-full md:basis-1/2 flex justify-end">
+        <img width="425px" height="400px" class="hidden md:block" src="/assets/images/login.svg" alt="Login Image" />
+      </div>
     </div>
+  </div>
 </body>
+
 </html>
