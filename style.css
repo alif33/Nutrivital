@@ -1,0 +1,5 @@
+.nutrition-card:hover h3,
+.nutrition-card:hover p,
+.nutrition-card:hover button {
+    color: white;
+}
